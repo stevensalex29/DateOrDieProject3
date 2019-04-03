@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Node : MonoBehaviour
+public class Node
 {
     //Attributes
     string currentText;
@@ -14,10 +14,10 @@ public class Node : MonoBehaviour
     Node option2;
     Node option3;
 
-    // Start is called before the first frame update
-    void Start()
+    // Constructor
+    public Node()
     {
-        
+
     }
 
     // Getters and Setters
@@ -76,11 +76,5 @@ public class Node : MonoBehaviour
     public void setRating(string r)
     {
         choiceRating = r;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

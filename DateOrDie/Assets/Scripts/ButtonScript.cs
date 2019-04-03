@@ -5,12 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Choose option1
     public void Option1()
     {
@@ -67,11 +61,5 @@ public class ButtonScript : MonoBehaviour
     public void EndDate()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("StatScreen");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

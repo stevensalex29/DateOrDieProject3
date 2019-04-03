@@ -55,34 +55,34 @@ public class GameManager : MonoBehaviour
     // Create the tree node by node
     public void createTree()
     {
-        Node n8 = gameObject.AddComponent<Node>();
+        Node n8 = new Node();
         n8.setText("Another end");
-        Node n7 = gameObject.AddComponent<Node>();
+        Node n7 = new Node();
         n7.setText("More story");
         n7.setNext(n8);
         n8.setPrevious(n7);
         // end node (no next or options, previous depends on if last nodes were options or not)
-        Node n6 = gameObject.AddComponent<Node>();
+        Node n6 = new Node();
         n6.setText("done");
         // option nodes (next is done node, no options or previous)
-        Node n5 = gameObject.AddComponent<Node>();
+        Node n5 = new Node();
         n5.setText("Opt3");
         n5.setRating("good");
         n5.setNext(n7);
-        Node n4 = gameObject.AddComponent<Node>();
+        Node n4 = new Node();
         n4.setText("Opt2");
         n4.setNext(n6);
-        Node n3 = gameObject.AddComponent<Node>();
+        Node n3 = new Node();
         n3.setText("Opt1");
         n3.setNext(n6);
         // node with options (no next, option nodes, previous node)
-        Node n2 = gameObject.AddComponent<Node>();
+        Node n2 = new Node();
         n2.setText("Choose an option");
         n2.setOption1(n3);
         n2.setOption2(n4);
         n2.setOption3(n5);
         // node without options (next, possible previous, no options)
-        Node n1 = gameObject.AddComponent<Node>();
+        Node n1 = new Node();
         n1.setText("Start Here");
         n1.setNext(n2);
         n2.setPrevious(n1);
