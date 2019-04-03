@@ -62,4 +62,28 @@ public class ButtonScript : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("StatScreen");
     }
+
+    // Start game
+    public void StartGame()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Day1Part1");
+    }
+
+    // Begin Onboarding
+    public void Onboarding()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Onboarding");
+    }
+
+    // Quit game
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    // Main Menu
+    public void MainMenu()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+    }
 }
