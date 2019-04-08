@@ -10,7 +10,8 @@ public class ButtonScript : MonoBehaviour
     {
         Node current = GameObject.Find("GameManager").GetComponent<GameManager>().getCurrentNode();
         // Increment or decrement affection bar (will be changed probably)
-        if (current.getOption1().getRating() == "good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar();
+        if (current.getOption1().getRating() == "good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.05f);
+        else if (current.getOption1().getRating() == "real good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.1f);
         else GameObject.Find("GameManager").GetComponent<GameManager>().decrementAffectionBar();
         // Update new current node and no longer show options
         GameObject.Find("GameManager").GetComponent<GameManager>().setCurrentNode(current.getOption1().getNext());
@@ -22,7 +23,8 @@ public class ButtonScript : MonoBehaviour
     {
         Node current = GameObject.Find("GameManager").GetComponent<GameManager>().getCurrentNode();
         // Increment or decrement affection bar (will be changed probably)
-        if (current.getOption2().getRating() == "good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar();
+        if (current.getOption2().getRating() == "good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.05f);
+        else if (current.getOption2().getRating() == "real good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.1f);
         else GameObject.Find("GameManager").GetComponent<GameManager>().decrementAffectionBar();
         // Update new current node and no longer show options
         GameObject.Find("GameManager").GetComponent<GameManager>().setCurrentNode(current.getOption2().getNext());
@@ -34,7 +36,8 @@ public class ButtonScript : MonoBehaviour
     {
         Node current = GameObject.Find("GameManager").GetComponent<GameManager>().getCurrentNode();
         // Increment or decrement affection bar (will be changed probably)
-        if (current.getOption3().getRating() == "good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar();
+        if (current.getOption3().getRating() == "good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.05f);
+        else if (current.getOption3().getRating() == "real good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.1f);
         else GameObject.Find("GameManager").GetComponent<GameManager>().decrementAffectionBar();
         // Update new current node and no longer show options
         GameObject.Find("GameManager").GetComponent<GameManager>().setCurrentNode(current.getOption3().getNext());
@@ -73,6 +76,30 @@ public class ButtonScript : MonoBehaviour
     public void Onboarding()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Onboarding");
+    }
+
+    // Go to date 1
+    public void Date1()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Day1Part1");
+    }
+
+    // Go to date 2
+    public void Date2()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Day1Part2");
+    }
+
+    // Go to date 3
+    public void Date3()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Day1Part3");
+    }
+
+    // Choose date screen
+    public void ChooseDate()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("ChooseDate");
     }
 
     // Quit game
