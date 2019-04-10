@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     // Attributes
     private Node currentNode;
     private float affectionBar;
+    private string affectionBarName;
     private string sceneName;
     public GameObject nextButton;
     public GameObject previousButton;
@@ -36,7 +37,7 @@ public class GameManager : MonoBehaviour
     }
     public void decrementAffectionBar()
     {
-        affectionBar -= 0.05f;
+        affectionBar -= 0.10f;
         if (affectionBar <= 0.05f) affectionBar = 0.0f;
     }
     public void incrementAffectionBar(float value)
@@ -60,10 +61,26 @@ public class GameManager : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
-        if (sceneName == "Onboarding") createOnboardingTree();
-        if (sceneName == "Day1Part1") createPart1Tree();
-        if (sceneName == "Day1Part2") createPart2Tree();
-        if (sceneName == "Day1Part3") createPart3Tree();
+        if (sceneName == "Onboarding")
+        {
+            createOnboardingTree();
+            affectionBarName = "onboarding";
+        }
+        if (sceneName == "Day1Part1")
+        {
+            createPart1Tree();
+            affectionBarName = "affection1";
+        }
+        if (sceneName == "Day1Part2")
+        {
+            createPart2Tree();
+            affectionBarName = "affection2";
+        }
+        if (sceneName == "Day1Part3")
+        {
+            createPart3Tree();
+            affectionBarName = "affection3";
+        }
     }
 
     // Create day 1 part 1 tree
@@ -83,14 +100,17 @@ public class GameManager : MonoBehaviour
         Node n25 = new Node();
         n25.setText("Sloppily kisses Tsathoggua back");
         n25.setRating("real good");
+        n25.setStat("Choice4Option3");
         n25.setNext(n28);
         Node n24 = new Node();
         n24.setText("Struggles and breaks free");
         n24.setRating("bad");
+        n24.setStat("Choice4Option2");
         n24.setNext(n27);
         Node n23 = new Node();
         n23.setText("Passes out from the overwhelming pressure of Tsathoggua's strength");
         n23.setRating("good");
+        n23.setStat("Choice4Option1");
         n23.setNext(n26);
         Node n22 = new Node();
         n22.setText("Before Cthulhu can say anything, he is attacked by an overwhelmingly sloppy kiss. His tentacles flail everywhere as Tsathoggua's brute strength lifts him off the ground. Cthulhu");
@@ -110,14 +130,17 @@ public class GameManager : MonoBehaviour
         Node n18 = new Node();
         n18.setText("Spits the coffee out when Tsathoggua isn't looking");
         n18.setRating("good");
+        n18.setStat("Choice3Option3");
         n18.setNext(n20);
         Node n17 = new Node();
         n17.setText("Swallows the mouthful he has and sets the cup down");
         n17.setRating("real good");
+        n17.setStat("Choice3Option2");
         n17.setNext(n20);
         Node n16 = new Node();
         n16.setText("Spits the coffee out mid-sip");
         n16.setRating("bad");
+        n16.setStat("Choice3Option1");
         n16.setNext(n19);
         Node n15 = new Node();
         n15.setText("Cthulhu looks at Tsathoggua, 'No problem Tsath, I couldn't get ready for the apocalypse and not see the laziest monster I know first, what kind of monster would I be?'. Cthulhu sips the coffee, surprised by how good it actually is. 'Wow, what makes this coffee so good, the humans?', he says as he continues sipping. Tsathoggua smirks and says, 'The coffee these worshippers bring me is quite aweful, so I add a secret ingredient, excrement!'. Cthulhu's eyes widen and he");
@@ -130,14 +153,17 @@ public class GameManager : MonoBehaviour
         Node n13 = new Node();
         n13.setText("Allow it to happen");
         n13.setRating("real good");
+        n13.setStat("Choice2Option3");
         n13.setNext(n14);
         Node n12 = new Node();
         n12.setText("Slightly move to assess the situation");
         n12.setRating("good");
+        n12.setStat("Choice2Option2");
         n12.setNext(n14);
         Node n11 = new Node();
         n11.setText("Quickly move away, disgusted");
         n11.setRating("bad");
+        n11.setStat("Choice2Option1");
         n11.setNext(n14);
         Node n10 = new Node();
         n10.setText("'Lately, all of these humans have been coming to worship me', Tsathoggua says. 'I told them I like coffee and they bought me some, but now they won't stop! At least they built the shack and put up signs like I asked!'. Cthulhu laughs at his friend's misfortune and is quickly surrounded by a gelatinous mountain of hairy fur as Tsathoggua embraces him. Cthulhu decides to");
@@ -161,14 +187,17 @@ public class GameManager : MonoBehaviour
         Node n5 = new Node();
         n5.setText("'Tsath, buddy, these last decades have treated you good!'");
         n5.setRating("good");
+        n5.setStat("Choice1Option3");
         n5.setNext(n6);
         Node n4 = new Node();
         n4.setText("'What's that smell? It smells like a dead sea fungus in here!'");
         n4.setRating("bad");
+        n4.setStat("Choice1Option2");
         n4.setNext(n7);
         Node n3 = new Node();
         n3.setText("'Hey Tsath, glad to see you bud, did you gain weight?'");
         n3.setRating("real good");
+        n3.setStat("Choice1Option1");
         n3.setNext(n6);
         Node n2 = new Node();
         n2.setText("Cthulhu entered the cave slowly, the smell of monster excrement and coffee beans filled the air. Following the smell led him directly to Tsathoggua. Tsathoggua was as huge, hairy, and pot-bellied as Cthulhu had remembered, the sight and smell of the room prompted him to say");
@@ -337,18 +366,21 @@ public class GameManager : MonoBehaviour
         Node n44 = new Node();
         n44.setText("Shyly look back at the screen.");
         n44.setRating("bad");
+        n44.setStat("2Choice3Option3");
         n44.setNext(n57);
         n57.setPrevious(n44);
 
         Node n43 = new Node();
         n43.setText("Give her a compliment.");
         n43.setRating("good");
+        n43.setStat("2Choice3Option2");
         n43.setNext(n50);
         n50.setPrevious(n43);
 
         Node n42 = new Node();
         n42.setText("Go in for the kiss.");
         n42.setRating("real good");
+        n42.setStat("2Choice3Option1");
         n42.setNext(n45);
         n45.setPrevious(n42);
 
@@ -442,18 +474,21 @@ public class GameManager : MonoBehaviour
         Node n24 = new Node();
         n24.setText("“Pick whichever you prefer. I don’t plan on looking at the screen for too long.”");
         n24.setRating("real good");
+        n24.setStat("2Choice2Option3");
         n24.setNext(n27);
         n27.setPrevious(n24);
 
         Node n23 = new Node();
         n23.setText("“Ok, but what if we watched literally anything else?”");
         n23.setRating("bad");
+        n23.setStat("2Choice2Option2");
         n23.setNext(n26);
         n26.setPrevious(n23);
 
         Node n22 = new Node();
         n22.setText("“I don’t know. Which one of these do you think is the most romantic?”");
         n22.setRating("good");
+        n22.setStat("2Choice2Option1");
         n22.setNext(n25);
         n25.setPrevious(n22);
 
@@ -532,18 +567,21 @@ public class GameManager : MonoBehaviour
         Node n7 = new Node();
         n7.setText("“Damnit, Shub. You’re not only late, but you managed to destroy the movie theater I got reservations for!”");
         n7.setRating("bad");
+        n7.setStat("2Choice1Option3");
         n7.setNext(n10);
         n10.setPrevious(n7);
 
         Node n6 = new Node();
         n6.setText("“You sure know how to make an entrance. We really didn’t have to destroy this city.”");
         n6.setRating("good");
+        n6.setStat("2Choice1Option2");
         n6.setNext(n9);
         n9.setPrevious(n6);
 
         Node n5 = new Node();
         n5.setText("“I would have waited a thousand years more if that’s what it took for a glimpse of you.”");
         n5.setRating("real good");
+        n5.setStat("2Choice1Option1");
         n5.setNext(n8);
         n8.setPrevious(n5);
 
@@ -583,12 +621,15 @@ public class GameManager : MonoBehaviour
         n8.setText("Notice how you gained affection from your choice? Each response will have either a positive or negative effect on your level of affection. Each monster prefers a particular mate, figure out their ideal monster to quickly win their hearts!");
         Node n7 = new Node();
         n7.setText("I'm the best choice!");
+        n7.setRating("good");
         n7.setNext(n8);
         Node n6 = new Node();
         n6.setText("No Pick me!");
+        n6.setRating("good");
         n6.setNext(n8);
         Node n5 = new Node();
         n5.setText("Pick me!");
+        n5.setRating("good");
         n5.setNext(n8);
         Node n4 = new Node();
         n4.setText("Every so often, dialog options will pop up below. Each option affects the level of affection the current monster has for you, try it out!");
@@ -644,5 +685,16 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         displayCurrentNode();
+
+        // Update affection bar itself
+        GameObject.Find("AffectionBar").GetComponent<Image>().fillAmount = affectionBar;
+        GameObject.Find("AffectionBarValue").GetComponent<Text>().text = (int)(affectionBar * 100) + "%";
+        // Update affection playerpref
+        if (affectionBarName != "onboarding") PlayerPrefs.SetFloat(affectionBarName, affectionBar);
+    }
+
+    void OnApplicationQuit()
+    {
+        PlayerPrefs.DeleteAll();
     }
 }

@@ -8,6 +8,7 @@ public class Node
     //Attributes
     string currentText;
     string choiceRating;
+    string statName;
     Node previous;
     Node next;
     Node option1;
@@ -76,5 +77,13 @@ public class Node
     public void setRating(string r)
     {
         choiceRating = r;
+    }
+    public string getStat()
+    {
+        return statName;
+    }
+    public void setStat(string s)
+    {
+        statName = s;
     }
 }
