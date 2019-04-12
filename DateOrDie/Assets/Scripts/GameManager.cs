@@ -216,8 +216,127 @@ public class GameManager : MonoBehaviour
     // Create day 1 part 2 tree
     public void createPart2Tree()
     {
+        Node n25 = new Node();
+        n25.setText("Cthulhu looked at his phone, seeing the reminder for his next date. 'Sorry, Nyarlathotep, we’ll just have to pick up where we left off next time.', Cthulhu said with an excited look as he walked back into the bay to leave. 'Just don’t make me wait too long. Or I'll find someone to replace those big shoes of yours.', Nyarlathotep slyly remarked, knowing no one could compare to Cthulhu.");
+
+        Node n24 = new Node();
+        n24.setText("Cthulhu nervously puts his cucumbers back on and explains, 'I'm ready for you, Nyarlathotep.' After uttering those words, Nyarlathotep kisses him on the cheek and says, 'I’m looking for someone more assertive and that just isn't you right now. Sorry, darling, I'm just not feeling it anymore. Maybe we can try this another time.' Cthulhu felt stung by his words, but knew there was truth in what he said. As cthulhu was contemplating what to say next, his phone alarm went off.");
+        n24.setNext(n25);
+
+        Node n23 = new Node();
+        n23.setText("Cthulhu, knowing he had ruined the mood, said, ' I'm sorry, I just need some space. I wasn't ready for something like that.' Cthulhu hugs Nyarlathotep, apologizing for the slap. Just as the hug ends, Cthulhu’s phone alarm goes off.");
+        n23.setNext(n25);
+
+        Node n22 = new Node();
+        n22.setText("Cthulhu embraced Nyarlathotep, his tentacles intermingling with Nyarlathotep’s hands. Both monsters were locked in place, wishing this moment could go on forever. Just when the tension was at its peak, they were interrupted by the sound of Cthulhu’s phone alarm.");
+        n22.setNext(n25);
+
+        Node n21 = new Node();
+        n21.setText("Puts his cucumbers back on and goes with the flow");
+        n21.setRating("good");
+        n21.setNext(n24);
+
+        Node n20 = new Node();
+        n20.setText("Slaps Nyarlathotep, pushing him away");
+        n20.setRating("bad");
+        n20.setNext(n23);
+
+        Node n19 = new Node();
+        n19.setText("Sensually kisses Nyarlathotep back");
+        n19.setRating("real good");
+        n19.setNext(n22);
+
+        Node n18 = new Node();
+        n18.setText("As Nyarlathotep starts applying oil, he tells Cthulhu, 'To really get the full experience, you need to put these on. They really help with your complexion.' Nyarlathotep hands Cthulhu pieces of cucumber to place over each eye. Nyarlathotep then goes on to massage Cthulhu’s massive back. He feels Nyarlathotep’s gentle caress on each and every tentacle as he starts getting closer and closers to Cthulhu’s neck. Without warning, Nyarlathotep massage stops. Cthulhu, wondering why he stopped, says, 'Nyarlathotep are you still back there?'. As Cthulhu takes off his cucumber slices, Nyarlathotep silently goes in for a kiss. Before Cthulhu can realize what is happening, he");
+        n18.setOption1(n19);
+        n18.setOption2(n20);
+        n18.setOption3(n21);
+        
+
+        Node n17 = new Node();
+        n17.setText("After Cthulhu had finished applying oil to Nyarlathotep’s back, Nyarlathotep insisted it was Cthulhu’s turn next. 'No, no, I really don't tan, I burn and smell like calamari', Cthulhu blushingly admits. 'Oh I don't think so! I bet you would smell delicious', Nyarlathotep says while licking his lips. Begrudgingly, Cthulhu accepts the offer, knowing what Nyarlathotep would do if he was denied his fun.");
+        n17.setNext(n18);
+        n18.setPrevious(n17);
+
+        Node n16 = new Node();
+        n16.setText("'hose tentacles of yours are just Divine. If you weren't my friend I would hire you on the spot, darling.'");
+        n16.setNext(n17);
+
+        Node n15 = new Node();
+        n15.setText("'Why do you even need to tan when you can change the color of your skin?', inquiries Cthulhu. This causes Nyarlathotep to start berating, 'I told you to apply the oil! I’m trying to go for a natural tan look, not a pale as a ghost look .You just don't understand the effort I put in to look this good every day.'");
+        n15.setNext(n17);
+
+        Node n14 = new Node();
+        n14.setText("start applying oil , then go in for the back rub");
+        n14.setRating("real good");
+        n14.setNext(n16);
+
+        Node n13 = new Node();
+        n13.setText("start applying the oil");
+        n13.setRating("good");
+        n13.setNext(n16);
+
+        Node n12 = new Node();
+        n12.setText("Begrudgingly start applying sun tan lotion");
+        n12.setRating("bad");
+        n12.setNext(n15);
+
+        Node n11 = new Node();
+        n11.setText("Cthulhu smirked and said, 'Nice party trick. Where did you send them to?'. Nyarlathotep, giddy with excitement, tells Cthulhu, 'You'll find out soon, sweetie. In the meantime, why don't you help me rub some lotion on my back. I'm trying to tan the natural way, really get a feel for how the humans do it. They might not be good for much, but they sure do know how to make a fine tanning oil.'");
+        n11.setOption1(n12);
+        n11.setOption2(n13);
+        n11.setOption3(n14);
+       
+
+        Node n10 = new Node();
+        n10.setText("With a single snap from Nyarlathotep’s fingers, the entire crowd seems to shudder and freeze. Not a single sound could be heard, except for the crashing of the waves. Suddenly, every frozen paparazzi began sinking into the sand, leaving only three things left on the beach: Cthulhu, Nyarlathotep and a beach towel for two.");
+        n10.setNext(n11);
+        n11.setPrevious(n10);
+
+        Node n9 = new Node();
+        n9.setText("After greeting Cthulhu, Nyarlathotep asked with a smile, 'Why are you so nervous, haven’t you ever been to a photo shoot?'. Cthulhu looked at him, groaning as he said, 'You know I hate crowds'. Nyarlathotep shakes his head, reluctantly holding down a chuckle saying, 'Cthulhu, The Great Old One, can’t handle a small crowd. You sure know how to make me laugh, old pal.'");
+        n9.setNext(n10);
+        n10.setPrevious(n9);
+
+        Node n8 = new Node();
+        n8.setText("'I’ve worked very hard to get all 4 of my Instagram’s to the top of the charts? Oh wait, all you do is sleep all year, so what would you know…'");
+        n8.setNext(n9);
+
+        Node n7 = new Node();
+        n7.setText("'As I like to say: nothing's worth doing if you're not doing it big.'");
+        n7.setNext(n9);
+
+        Node n6 = new Node();
+        n6.setText("'Nyarl, buddy, you sure know how to throw a party!'");
+        n6.setRating("good");
+        n6.setNext(n7);
+
+        Node n5 = new Node();
+        n5.setText("'Why is it always crowds with you, we never get to talk one on one?'");
+        n5.setRating("bad");
+        n5.setNext(n8);
+
+        Node n4 = new Node();
+        n4.setText("'Hey Nyarl, glad to see your still creating crowds wherever you go'");
+        n4.setRating("real good");
+        n4.setNext(n7);
+
+        Node n3 = new Node();
+        n3.setText("It is at this point that Cthulhu found the source of the photographers’ obsession. Standing in the center of this massive circle of monsters was an impossibly handsome man whose appearance seemed to get more beautiful the longer he stared at him. Cthulhu recognized this man as Nyarlathotep, The Crawling Chaos, a shape shifter with a pension towards narcissism. As Cthulhu walked up to greet him he said");
+        n3.setOption1(n4);
+        n3.setOption2(n5);
+        n3.setOption3(n6);
+
+        Node n2 = new Node();
+        n2.setText("As he reached the shore, Cthulhu noticed something off about the people there. Each and every monster was huddled in a circle, surrounding one person as they tried taking pictures of them. Cthulhu, confused by the scene, asked one of photographers what was happening, only for them to reply, ‘He’s gorgeous.’ Perplexed by this answer, he ask another photographer, then another, then another. Fed up from getting the same answer, Cthulhu forced his way into the center of the circle. ");
+        n2.setNext(n3);
+        n3.setPrevious(n2);
+
         Node n1 = new Node();
-        n1.setText("Insert date text");
+        n1.setText("Cthulhu feels sand at his feet as he rises from the ocean to a luxurious beach filled to the brim with people. As he gets closer to the shoreline, he notices a sign with the words ‘Penumbra beach’ etched into the small wooden post. Cthulhu had always hated the beach, too much sand and too many people. However, not even he would not miss an invitation to spend time with Nyarlathotep");
+        n1.setNext(n2);
+        n2.setPrevious(n1);
+   
 
         // set root node
         setCurrentNode(n1);
