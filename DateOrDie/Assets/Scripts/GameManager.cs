@@ -23,7 +23,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         affectionBar = 0.0f;
-        createTree();  
+        createTree();
+        PlayerPrefs.DeleteAll();
     }
 
     // Getters and Setters
@@ -234,16 +235,19 @@ public class GameManager : MonoBehaviour
         Node n21 = new Node();
         n21.setText("Puts his cucumbers back on and goes with the flow");
         n21.setRating("good");
+        n21.setStat("1Choice3Option3");
         n21.setNext(n24);
 
         Node n20 = new Node();
         n20.setText("Slaps Nyarlathotep, pushing him away");
         n20.setRating("bad");
+        n20.setStat("1Choice3Option2");
         n20.setNext(n23);
 
         Node n19 = new Node();
         n19.setText("Sensually kisses Nyarlathotep back");
         n19.setRating("real good");
+        n19.setStat("1Choice3Option1");
         n19.setNext(n22);
 
         Node n18 = new Node();
@@ -259,7 +263,7 @@ public class GameManager : MonoBehaviour
         n18.setPrevious(n17);
 
         Node n16 = new Node();
-        n16.setText("'hose tentacles of yours are just Divine. If you weren't my friend I would hire you on the spot, darling.'");
+        n16.setText("'Those tentacles of yours are just Divine. If you weren't my friend I would hire you on the spot, darling.'");
         n16.setNext(n17);
 
         Node n15 = new Node();
@@ -267,18 +271,21 @@ public class GameManager : MonoBehaviour
         n15.setNext(n17);
 
         Node n14 = new Node();
-        n14.setText("start applying oil , then go in for the back rub");
+        n14.setText("Start applying oil , then go in for the back rub");
         n14.setRating("real good");
+        n14.setStat("1Choice2Option3");
         n14.setNext(n16);
 
         Node n13 = new Node();
-        n13.setText("start applying the oil");
+        n13.setText("Start applying the oil");
         n13.setRating("good");
+        n13.setStat("1Choice2Option2");
         n13.setNext(n16);
 
         Node n12 = new Node();
         n12.setText("Begrudgingly start applying sun tan lotion");
         n12.setRating("bad");
+        n12.setStat("1Choice2Option1");
         n12.setNext(n15);
 
         Node n11 = new Node();
@@ -309,16 +316,19 @@ public class GameManager : MonoBehaviour
         Node n6 = new Node();
         n6.setText("'Nyarl, buddy, you sure know how to throw a party!'");
         n6.setRating("good");
+        n6.setStat("1Choice1Option3");
         n6.setNext(n7);
 
         Node n5 = new Node();
         n5.setText("'Why is it always crowds with you, we never get to talk one on one?'");
         n5.setRating("bad");
+        n5.setStat("1Choice1Option2");
         n5.setNext(n8);
 
         Node n4 = new Node();
-        n4.setText("'Hey Nyarl, glad to see your still creating crowds wherever you go'");
+        n4.setText("'Hey Nyarl, glad to see your still creating crowds wherever you go.'");
         n4.setRating("real good");
+        n4.setStat("1Choice1Option1");
         n4.setNext(n7);
 
         Node n3 = new Node();
@@ -328,12 +338,12 @@ public class GameManager : MonoBehaviour
         n3.setOption3(n6);
 
         Node n2 = new Node();
-        n2.setText("As he reached the shore, Cthulhu noticed something off about the people there. Each and every monster was huddled in a circle, surrounding one person as they tried taking pictures of them. Cthulhu, confused by the scene, asked one of photographers what was happening, only for them to reply, ‘He’s gorgeous.’ Perplexed by this answer, he ask another photographer, then another, then another. Fed up from getting the same answer, Cthulhu forced his way into the center of the circle. ");
+        n2.setText("As he reached the shore, Cthulhu noticed something off about the people there. Each and every monster was huddled in a circle, surrounding one person as they tried taking pictures of them. Cthulhu, confused by the scene, asked one of the photographers what was happening, only for them to reply, ‘He’s gorgeous.’. Perplexed by this answer, he ask another photographer, then another, then another. Fed up from getting the same answer, Cthulhu forced his way into the center of the circle.");
         n2.setNext(n3);
         n3.setPrevious(n2);
 
         Node n1 = new Node();
-        n1.setText("Cthulhu feels sand at his feet as he rises from the ocean to a luxurious beach filled to the brim with people. As he gets closer to the shoreline, he notices a sign with the words ‘Penumbra beach’ etched into the small wooden post. Cthulhu had always hated the beach, too much sand and too many people. However, not even he would not miss an invitation to spend time with Nyarlathotep");
+        n1.setText("Cthulhu feels sand at his feet as he rises from the ocean to a luxurious beach filled to the brim with people. As he gets closer to the shoreline, he notices a sign with the words ‘Penumbra beach’ etched into the small wooden post. Cthulhu had always hated the beach, too much sand and too many people. However, not even he would not miss an invitation to spend time with Nyarlathotep.");
         n1.setNext(n2);
         n2.setPrevious(n1);
    
