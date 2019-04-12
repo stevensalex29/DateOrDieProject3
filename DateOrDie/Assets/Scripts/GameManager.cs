@@ -583,10 +583,15 @@ public class GameManager : MonoBehaviour
         n29.setNext(n30);
         n30.setPrevious(n29);
 
+        Node fUp9 = new Node();
+        fUp9.setText("Soon, the words “Mothra vs. Godzilla” appeared, and the movie started. Immediately, humans showed up on screen and Cthulhu lost all interest.");
+        fUp9.setNext(n29);
+        n29.setPrevious(fUp9);
+
         Node n28 = new Node();
-        n28.setText("The projector produced a beam of light directed at the wall. The light was so powerful it immediately incinerated any buildings or vegetation that were still attached to the surface. Soon, the words “Mothra vs. Godzilla” appeared, and the movie started. Immediately, humans showed up on screen and Cthulhu lost all interest.");
-        n28.setNext(n29);
-        n29.setPrevious(n28);
+        n28.setText("The projector produced a beam of light directed at the wall. The light was so powerful it immediately incinerated any buildings or vegetation that were still attached to the surface.");
+        n28.setNext(fUp9);
+        fUp9.setPrevious(n28);
 
         Node n27 = new Node();
         n27.setText("Shub gave him a playful smile. “Oh, is that so?”, she giggled again. “Well then, what if we watch this one?”");
@@ -596,9 +601,14 @@ public class GameManager : MonoBehaviour
         n26.setText("“What? Not a fan? Well too bad.”, somehow, she made a mocking face. “My projector, my movie. Here, let’s watch this one. I bet you'll like it.”");
         n26.setNext(n28);
 
+        Node fUp8 = new Node();
+        fUp8.setText("She kept going for a while after that. Eventually, she interrupted herself. “Oh, sorry! Sometimes I get too excited to talk about these movies! Let’s just watch this one.”");
+        fUp8.setNext(n28);
+
         Node n25 = new Node();
-        n25.setText("Shub’s eyes widened. “Oh, that’s a great question! I think it's between Son of Godzilla and Mothra vs. Godzilla, right? Mothra and Godzilla definitely have a lot of chemistry together, although some could argue…” She kept going for a while after that. Eventually, she interrupted herself. “Oh, sorry! Sometimes I get too excited to talk about these movies! Let’s just watch this one.”");
+        n25.setText("Shub’s eyes widened. “Oh, that’s a great question! I think it's between Son of Godzilla and Mothra vs. Godzilla, right? Mothra and Godzilla definitely have a lot of chemistry together, although some could argue…”");
         n25.setNext(n28);
+        fUp8.setPrevious(n25);
 
         Node n24 = new Node();
         n24.setText("“Pick whichever you prefer. I don’t plan on looking at the screen for too long.”");
@@ -626,20 +636,31 @@ public class GameManager : MonoBehaviour
         n21.setOption1(n22);
         n21.setOption2(n23);
         n21.setOption3(n24);
-        n22.setPrevious(n21);
-        n23.setPrevious(n21);
-        n24.setPrevious(n21);
-        n28.setPrevious(n21);
 
         Node n20 = new Node();
         n20.setText("Cthulhu’s eyes widened. “Did you make some of these up?”");
         n20.setNext(n21);
         n21.setPrevious(n20);
 
+        Node fUp7 = new Node();
+        fUp7.setText("‘Godzilla: Tokyo S.O.S’, ‘Godzilla: Final Wars’, and ‘Shin Godzilla’.”");
+        fUp7.setNext(n20);
+        n20.setPrevious(fUp7);
+
+        Node fUp6 = new Node();
+        fUp6.setText("‘Godzilla vs. Biollante’, ‘Godzilla vs. King Ghidorah’, ‘Godzilla vs Mechagodzilla 2’, ‘Godzilla vs. SpaceGodzilla’, ‘Godzilla vs. Destroyah’, ‘Godzilla 2000’, ‘Godzilla vs. Megaguirus’");
+        fUp6.setNext(fUp7);
+        fUp7.setPrevious(fUp6);
+
+        Node fUp5 = new Node();
+        fUp5.setText("‘Son of Godzilla’, ‘Godzilla vs. Hedorah’, ‘Godzilla vs. Gigan’, ‘Godzilla vs. Megalon’, ‘Godzilla vs. Mechagodzilla’, ‘Terror of Mechagodzilla’, ‘The Return of Godzilla’");
+        fUp5.setNext(fUp6);
+        fUp6.setPrevious(fUp5);
+
         Node n19 = new Node();
-        n19.setText("“Believe it or not, we have options”, Shub said playfully. “I have OG ‘Godzilla’, ‘Godzilla Raids Again’, ‘Mothra vs. Godzilla’, ‘Son of Godzilla’, ‘Godzilla vs. Mechagodzilla’, ‘The Return of Godzilla’, ‘Godzilla vs Mechagodzilla 2’, ‘Godzilla 2000’ and ‘Shin Godzilla’.”");
-        n19.setNext(n20);
-        n20.setPrevious(n19);
+        n19.setText("“Believe or not, we have options” Shub said playfully. “I have OG ‘Godzilla’, ‘Godzilla Raids Again’, ‘King Kong vs. Godzilla, ‘Mothra vs. Godzilla’, ‘Invasion of Astro-Monster’");
+        n19.setNext(fUp5);
+        fUp5.setPrevious(n19);
 
         Node n18 = new Node();
         n18.setText("“What are we watching?”, Cthulhu inquired.");
@@ -719,25 +740,41 @@ public class GameManager : MonoBehaviour
         n4.setOption1(n5);
         n4.setOption2(n6);
         n4.setOption3(n7);
-        n5.setPrevious(n4);
-        n6.setPrevious(n4);
-        n7.setPrevious(n4);
-        n11.setPrevious(n4);
+
+        Node fUp4 = new Node();
+        fUp4.setText("With a sigh, Cthulhu began growing back to his original size. His outfit exploded. The ground around him did the same. Soon, he towered above the entire city, his mere presence knocking down entire buildings.");
+        fUp4.setNext(n4);
+        n4.setPrevious(fUp4);
 
         Node n3 = new Node();
-        n3.setText("From the sky, a massive blob of tentacles penetrated the atmosphere, becoming engulfed in a ball of fire. Earthquakes shattered the asphalt around him, while people’s skin melted off their faces around him. With a sigh, Cthulhu began growing back to his original size. His outfit exploded. The ground around him did the same. Soon, he towered above the entire city, his mere presence knocking down entire buildings.");
-        n3.setNext(n4);
-        n4.setPrevious(n3);
+        n3.setText("From the sky, a massive blob of tentacles penetrated the atmosphere, becoming engulfed in a ball of fire. Earthquakes shattered the asphalt around him, while people’s skin melted off their faces around him.");
+        n3.setNext(fUp4);
+        fUp4.setPrevious(n3);
+
+        Node fUp3 = new Node();
+        fUp3.setText("DESCRIBE OUTFIT. He was perfectly disguised. It couldn’t be him. Upon closer inspection of the crowd, he saw a few were looking up.");
+        fUp3.setNext(n3);
+        n3.setPrevious(fUp3);
+
+        Node fUp2 = new Node();
+        fUp2.setText("Humans losing their minds upon witnessing something incomprehensibly frightening. Cthulhu quickly checked his outfit to see if he was the cause of this. His outfit was impeccable.");
+        fUp2.setNext(fUp3);
+        fUp3.setPrevious(fUp2);
 
         Node n2 = new Node();
-        n2.setText("A ‘very hard’ game of minesweeper on his phone was interrupted by screams. Cthulhu looked around to see what the cause of the commotion was. He was surrounded by a scene he had seen many times. Humans losing their minds upon witnessing something incomprehensibly frightening. Cthulhu quickly checked his outfit to see if he was the cause of this. His outfit was impeccable. DESCRIBE OUTFIT. He was perfectly disguised. It couldn’t be him. Upon closer inspection of the crowd, he saw a few were looking up.");
-        n2.setNext(n3);
-        n3.setPrevious(n2);
+        n2.setText("A ‘very hard’ game of minesweeper on his phone was interrupted by screams. Cthulhu looked around to see what the cause of the commotion was. He was surrounded by a scene he had seen many times.");
+        n2.setNext(fUp2);
+        fUp2.setPrevious(n2);
+
+        Node fUp1 = new Node();
+        fUp1.setText("“I can’t really expect anything else from her”, he thought, quickly hiding his monstrous features back in his outfit. He sat on a nearby bench to wait.");
+        fUp1.setNext(n2);
+        n2.setPrevious(fUp1);
 
         Node n1 = new Node();
-        n1.setText("Cthulhu looked down at his phone. “8:00 pm at the Honeyview Movie Theater xoxoxo”. It was 8:15. His tentacles flailed out from underneath his CLOTHES as he sighed in exasperation. “I can’t really expect anything else from her”, he thought, quickly hiding his monstrous features back in his outfit. He sat on a nearby bench to wait. ");
-        n1.setNext(n2);
-        n2.setPrevious(n1);
+        n1.setText("Cthulhu looked down at his phone. “8:00 pm at the Honeyview Movie Theater xoxoxo”. It was 8:15. His tentacles flailed out from underneath his CLOTHES as he sighed in exasperation.");
+        n1.setNext(fUp1);
+        fUp1.setPrevious(n1);
 
         // set root node
         setCurrentNode(n1);
