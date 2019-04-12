@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour
     {
         affectionBar = 0.0f;
         createTree();
-        PlayerPrefs.DeleteAll();
     }
 
     // Getters and Setters
@@ -71,16 +70,46 @@ public class GameManager : MonoBehaviour
         {
             createPart1Tree();
             affectionBarName = "affection1";
+            PlayerPrefs.SetInt("Choice1Option1", 0);
+            PlayerPrefs.SetInt("Choice1Option2", 0);
+            PlayerPrefs.SetInt("Choice1Option3", 0);
+            PlayerPrefs.SetInt("Choice2Option1", 0);
+            PlayerPrefs.SetInt("Choice2Option2", 0);
+            PlayerPrefs.SetInt("Choice2Option3", 0);
+            PlayerPrefs.SetInt("Choice3Option1", 0);
+            PlayerPrefs.SetInt("Choice3Option2", 0);
+            PlayerPrefs.SetInt("Choice3Option3", 0);
+            PlayerPrefs.SetInt("Choice4Option1", 0);
+            PlayerPrefs.SetInt("Choice4Option2", 0);
+            PlayerPrefs.SetInt("Choice4Option3", 0);
         }
         if (sceneName == "Day1Part2")
         {
             createPart2Tree();
             affectionBarName = "affection2";
+            PlayerPrefs.SetInt("1Choice1Option1", 0);
+            PlayerPrefs.SetInt("1Choice1Option2", 0);
+            PlayerPrefs.SetInt("1Choice1Option3", 0);
+            PlayerPrefs.SetInt("1Choice2Option1", 0);
+            PlayerPrefs.SetInt("1Choice2Option2", 0);
+            PlayerPrefs.SetInt("1Choice2Option3", 0);
+            PlayerPrefs.SetInt("1Choice3Option1", 0);
+            PlayerPrefs.SetInt("1Choice3Option2", 0);
+            PlayerPrefs.SetInt("1Choice3Option3", 0);
         }
         if (sceneName == "Day1Part3")
         {
             createPart3Tree();
             affectionBarName = "affection3";
+            PlayerPrefs.SetInt("2Choice1Option1", 0);
+            PlayerPrefs.SetInt("2Choice1Option2", 0);
+            PlayerPrefs.SetInt("2Choice1Option3", 0);
+            PlayerPrefs.SetInt("2Choice2Option1", 0);
+            PlayerPrefs.SetInt("2Choice2Option2", 0);
+            PlayerPrefs.SetInt("2Choice2Option3", 0);
+            PlayerPrefs.SetInt("2Choice3Option1", 0);
+            PlayerPrefs.SetInt("2Choice3Option2", 0);
+            PlayerPrefs.SetInt("2Choice3Option3", 0);
         }
     }
 
