@@ -116,128 +116,212 @@ public class GameManager : MonoBehaviour
     // Create day 1 part 1 tree
     public void createPart1Tree()
     {
+        Node fUp11 = new Node();
+        fUp11.setText("Cthulhu heads for the exit, but turns around and says, 'I'll be sure to visit you again, Tsath. You aren't as lonely as you think, I'll always be here for you!'. Tsathoggua smiles as Cthulhu leaves for his next date.");
+
         Node n29 = new Node();
-        n29.setText("'Oh shoot! I have to head out Tsath, I got a...thing I got to do!'. Tsathoggua looks at Cthulhu, sad that he has to leave, 'Oh, alright Cthulhu, go do your thing.'. Cthulhu heads for the exit, but turns around and says, 'I'll be sure to visit you again, Tsath. You aren't as lonely as you think, I'll always be here for you!'. Tsathoggua smiles as Cthulhu leaves for his next date.");
+        n29.setText("'Oh shoot! I have to head out Tsath, I got a...thing I got to do!'. Tsathoggua looks at Cthulhu, sad that he has to leave, 'Oh, alright Cthulhu, go do your thing.'.");
+        n29.setNext(fUp11);
+        fUp11.setPrevious(n29);
+
         Node n28 = new Node();
         n28.setText("Cthulhu holds onto Tsathoggua's jelly rolls and keeps the kiss going, but is rudely interrupted by his phone. He glances at it, it's a reminder for his next date!");
         n28.setNext(n29);
+
         Node n27 = new Node();
         n27.setText("Cthulhu breaks free and says nervously, 'Haha...thanks...'. 'Why did he kiss me', he thinks, uncomfortable about the situation. The sound of his phone breaks the uncomfortable silence, reminding him of his next date.");
         n27.setNext(n29);
+
+        Node fUp10 = new Node();
+        fUp10.setText("'My next date!', he thinks as he sees the reminder. He quickly wakes the jello-like husk that is Tsathoggua.");
+        fUp10.setNext(n29);
+
         Node n26 = new Node();
-        n26.setText("Cthulhu awakens soon after, resting on Tsathoggua's pot belly after he passed out. After realizing Tsathoggua is asleep as well, Cthulhu looks at his phone. 'My next date!', he thinks as he sees the reminder. He quickly wakes the jello-like husk that is Tsathoggua.");
-        n26.setNext(n29);
+        n26.setText("Cthulhu awakens soon after, resting on Tsathoggua's pot belly after he passed out. After realizing Tsathoggua is asleep as well, Cthulhu looks at his phone.");
+        n26.setNext(fUp10);
+        fUp10.setPrevious(n26);
+
         Node n25 = new Node();
         n25.setText("Sloppily kisses Tsathoggua back");
         n25.setRating("real good");
         n25.setStat("Choice4Option3");
         n25.setNext(n28);
+
         Node n24 = new Node();
         n24.setText("Struggles and breaks free");
         n24.setRating("bad");
         n24.setStat("Choice4Option2");
         n24.setNext(n27);
+
         Node n23 = new Node();
         n23.setText("Passes out from the overwhelming pressure of Tsathoggua's strength");
         n23.setRating("good");
         n23.setStat("Choice4Option1");
         n23.setNext(n26);
+
         Node n22 = new Node();
         n22.setText("Before Cthulhu can say anything, he is attacked by an overwhelmingly sloppy kiss. His tentacles flail everywhere as Tsathoggua's brute strength lifts him off the ground. Cthulhu");
         n22.setOption1(n23);
         n22.setOption2(n24);
         n22.setOption3(n25);
+
+        Node fUp9 = new Node();
+        fUp9.setText("Tsathoggua makes a funny face, not liking the idea of movement and says, 'I'd rather do something else.'.");
+        fUp9.setNext(n22);
+        n22.setPrevious(fUp9);
+
+        Node fUp8 = new Node();
+        fUp8.setText("After a dreadful amount of time, Cthulhu says, 'Hey, want to do something? We can...uh...'. Cthulhu looks around as his eyes land on a rock, 'We can play catch!'.");
+        fUp8.setNext(fUp9);
+        fUp9.setPrevious(fUp8);
+
         Node n21 = new Node();
-        n21.setText("Cthulhu looks at Tsathoggua, 'The coffee was good, a little hot though...'. For the next hour, Tsathoggua and Cthulhu sit silently. Cthulhu pretends to sip the coffee, even though he isn't, while Tsathoggua happily gulps it all down. After a dreadful amount of time, Cthulhu says, 'Hey, want to do something? We can...uh...'. Cthulhu looks around as his eyes land on a rock, 'We can play catch!'. Tsathoggua makes a funny face, not liking the idea of movement and says, 'I'd rather do something else.'.");
-        n21.setNext(n22);
-        n22.setPrevious(n21);
+        n21.setText("Cthulhu looks at Tsathoggua, 'The coffee was good, a little hot though...'. For the next hour, Tsathoggua and Cthulhu sit silently. Cthulhu pretends to sip the coffee, even though he isn't, while Tsathoggua happily gulps it all down.");
+        n21.setNext(fUp8);
+        fUp8.setPrevious(n21);
+
         Node n20 = new Node();
         n20.setText("Cthulhu brushes off his tongue and pretends to smile about the situation.");
         n20.setNext(n21);
+
         Node n19 = new Node();
         n19.setText("'Oh I thought you liked it?', Tsathoggua says.");
         n19.setNext(n21);
+
         Node n18 = new Node();
         n18.setText("Spits the coffee out when Tsathoggua isn't looking");
         n18.setRating("good");
         n18.setStat("Choice3Option3");
         n18.setNext(n20);
+
         Node n17 = new Node();
         n17.setText("Swallows the mouthful he has and sets the cup down");
         n17.setRating("real good");
         n17.setStat("Choice3Option2");
         n17.setNext(n20);
+
         Node n16 = new Node();
         n16.setText("Spits the coffee out mid-sip");
         n16.setRating("bad");
         n16.setStat("Choice3Option1");
         n16.setNext(n19);
+
         Node n15 = new Node();
-        n15.setText("Cthulhu looks at Tsathoggua, 'No problem Tsath, I couldn't get ready for the apocalypse and not see the laziest monster I know first, what kind of monster would I be?'. Cthulhu sips the coffee, surprised by how good it actually is. 'Wow, what makes this coffee so good, the humans?', he says as he continues sipping. Tsathoggua smirks and says, 'The coffee these worshippers bring me is quite aweful, so I add a secret ingredient, excrement!'. Cthulhu's eyes widen and he");
+        n15.setText("'Wow, what makes this coffee so good, the humans?', he says as he continues sipping. Tsathoggua smirks and says, 'The coffee these worshippers bring me is quite aweful, so I add a secret ingredient, excrement!'. Cthulhu's eyes widen and he");
         n15.setOption1(n16);
         n15.setOption2(n17);
         n15.setOption3(n18);
+
+        Node fUp7 = new Node();
+        fUp7.setText("Cthulhu looks at Tsathoggua, 'No problem Tsath, I couldn't get ready for the apocalypse and not see the laziest monster I know first, what kind of monster would I be?'. Cthulhu sips the coffee, surprised by how good it actually is.");
+        fUp7.setNext(n15);
+        n15.setPrevious(fUp7);
+
         Node n14 = new Node();
         n14.setText("Tsathoggua whines, 'Cthulhu, I've been so busy doing nothing that I haven't had time to invite anyone over. Thank you for coming!'.");
-        n14.setNext(n15);
+        n14.setNext(fUp7);
+        fUp7.setPrevious(n14);
+
         Node n13 = new Node();
         n13.setText("Allow it to happen");
         n13.setRating("real good");
         n13.setStat("Choice2Option3");
         n13.setNext(n14);
+
         Node n12 = new Node();
         n12.setText("Slightly move to assess the situation");
         n12.setRating("good");
         n12.setStat("Choice2Option2");
         n12.setNext(n14);
+
         Node n11 = new Node();
         n11.setText("Quickly move away, disgusted");
         n11.setRating("bad");
         n11.setStat("Choice2Option1");
         n11.setNext(n14);
+
         Node n10 = new Node();
-        n10.setText("'Lately, all of these humans have been coming to worship me', Tsathoggua says. 'I told them I like coffee and they bought me some, but now they won't stop! At least they built the shack and put up signs like I asked!'. Cthulhu laughs at his friend's misfortune and is quickly surrounded by a gelatinous mountain of hairy fur as Tsathoggua embraces him. Cthulhu decides to");
+        n10.setText("Cthulhu laughs at his friend's misfortune and is quickly surrounded by a gelatinous mountain of hairy fur as Tsathoggua embraces him. Cthulhu decides to");
         n10.setOption1(n11);
         n10.setOption2(n12);
         n10.setOption3(n13);
+
+        Node fUp6 = new Node();
+        fUp6.setText("'Lately, all of these humans have been coming to worship me', Tsathoggua says. 'I told them I like coffee and they bought me some, but now they won't stop! At least they built the shack and put up signs like I asked!'.");
+        fUp6.setNext(n10);
+        n10.setPrevious(fUp6);
+
+        Node fUp5 = new Node();
+        fUp5.setText("Cthulhu, unable to fit of course, slides close to Tsathoggua and grabs a coffee from the shack. 'Where did you get the idea to do all of this, I thought you were a lazy barnacle?', Cthulhu says snarkily.");
+        fUp5.setNext(fUp6);
+        fUp6.setPrevious(fUp5);
+
+        Node fUp4 = new Node();
+        fUp4.setText("'Wow', Cthulhu thinks, wondering how the shack is still standing under Tsathoggua's large belly. 'Come on in and get some coffee!', Tsathoggua bellows.");
+        fUp4.setNext(fUp5);
+        fUp5.setPrevious(fUp4);
+
         Node n9 = new Node();
-        n9.setText("Tsathoggua, with a great heave, lifts his large pot belly. Underneath lies a little shack with the same terribly constructed sign on top. 'Wow', Cthulhu thinks, wondering how the shack is still standing under Tsathoggua's large belly. 'Come on in and get some coffee!', Tsathoggua bellows. Cthulhu, unable to fit of course, slides close to Tsathoggua and grabs a coffee from the shack. 'Where did you get the idea to do all of this, I thought you were a lazy barnacle?', Cthulhu says snarkily.");
-        n9.setNext(n10);
-        n10.setPrevious(n9);
+        n9.setText("Tsathoggua, with a great heave, lifts his large pot belly. Underneath lies a little shack with the same terribly constructed sign on top.");
+        n9.setNext(fUp4);
+        fUp4.setPrevious(n9);
+
+        Node fUp3 = new Node();
+        fUp3.setText("Tsathoggua looks at Cthulhu and jiggles in place as he attempts to move, but to no avail, 'I opened a coffee shop to the public', he said with a grunt. Cthulhu's tentabrow furrows, 'Well...where is it?'.");
+        fUp3.setNext(n9);
+        n9.setPrevious(fUp3);
+
         Node n8 = new Node();
-        n8.setText("Cthulhu makes his way across the room, still wondering about the sign outside. 'Tsath, what's up with that Cave of Coffee sign outside?'. Tsathoggua looks at Cthulhu and jiggles in place as he attempts to move, but to no prevail, 'I opened a coffee shop to the public', he said with a grunt. Cthulhu's tentabrow furrows, 'Well...where is it?'.");
-        n8.setNext(n9);
-        n9.setPrevious(n8);
+        n8.setText("Cthulhu makes his way across the room, still wondering about the sign outside. 'Tsath, what's up with that Cave of Coffee sign outside?'.");
+        n8.setNext(fUp3);
+        fUp3.setPrevious(n8);
+
         Node n7 = new Node();
         n7.setText("'Cthulhu! Do you know how hard I've worked to get this place smelling the way it does? I've done absolutely nothing...and it's been exhausting!'");
         n7.setNext(n8);
+
         Node n6 = new Node();
         n6.setText("'Thank you for noticing, Cthulhu, I've tried my best to do absolutely nothing these last 100 years!'");
         n6.setNext(n8);
+
         Node n5 = new Node();
         n5.setText("'Tsath, buddy, these last decades have treated you good!'");
         n5.setRating("good");
         n5.setStat("Choice1Option3");
         n5.setNext(n6);
+
         Node n4 = new Node();
         n4.setText("'What's that smell? It smells like a dead sea fungus in here!'");
         n4.setRating("bad");
         n4.setStat("Choice1Option2");
         n4.setNext(n7);
+
         Node n3 = new Node();
         n3.setText("'Hey Tsath, glad to see you bud, did you gain weight?'");
         n3.setRating("real good");
         n3.setStat("Choice1Option1");
         n3.setNext(n6);
+
         Node n2 = new Node();
-        n2.setText("Cthulhu entered the cave slowly, the smell of monster excrement and coffee beans filled the air. Following the smell led him directly to Tsathoggua. Tsathoggua was as huge, hairy, and pot-bellied as Cthulhu had remembered, the sight and smell of the room prompted him to say");
+        n2.setText("Tsathoggua was as huge, hairy, and pot-bellied as Cthulhu had remembered, the sight and smell of the room prompted him to say");
         n2.setOption1(n3);
         n2.setOption2(n4);
         n2.setOption3(n5);
+
+        Node fUp2 = new Node();
+        fUp2.setText("Cthulhu entered the cave slowly, the smell of monster excrement and coffee beans filled the air. Following the smell led him directly to Tsathoggua.");
+        fUp2.setNext(n2);
+        n2.setPrevious(fUp2);
+
+        Node fUp1 = new Node();
+        fUp1.setText("It read, 'Cave of Coffee, come one, come all!'. Still sluggish from his long sleep and craving coffee, he headed in the direction of the closest cave.");
+        fUp1.setNext(fUp2);
+        fUp2.setPrevious(fUp1);
+
         Node n1 = new Node();
-        n1.setText("As Cthulhu walked through the woods towards his date, he quickly noticed a poorly built sign. The sign was written in crayon and was one nail away from falling apart. It read, 'Cave of Coffee, come one, come all!'. Still sluggish from his long sleep and craving coffee, he headed in the direction of the closest cave.");
-        n1.setNext(n2);
-        n2.setPrevious(n1);
+        n1.setText("As Cthulhu walked through the woods towards his date, he quickly noticed a poorly built sign. The sign was written in crayon and was one nail away from falling apart.");
+        n1.setNext(fUp1);
+        fUp1.setPrevious(n1);
 
         // set root node
         setCurrentNode(n1);
@@ -246,26 +330,46 @@ public class GameManager : MonoBehaviour
     // Create day 1 part 2 tree
     public void createPart2Tree()
     {
+        Node fUp15 = new Node();
+        fUp15.setText("'Just don’t make me wait too long. Or I'll find someone to replace those big shoes of yours.', Nyarlathotep slyly remarked, knowing no one could compare to Cthulhu.");
+
         Node n25 = new Node();
-        n25.setText("Cthulhu looked at his phone, seeing the reminder for his next date. 'Sorry, Nyarlathotep, we’ll just have to pick up where we left off next time.', Cthulhu said with an excited look as he walked back into the bay to leave. 'Just don’t make me wait too long. Or I'll find someone to replace those big shoes of yours.', Nyarlathotep slyly remarked, knowing no one could compare to Cthulhu.");
+        n25.setText("Cthulhu looked at his phone, seeing the reminder for his next date. 'Sorry, Nyarlathotep, we’ll just have to pick up where we left off next time.', Cthulhu said with an excited look as he walked back into the bay to leave.");
+        n25.setNext(fUp15);
+        fUp15.setPrevious(n25);
 
         Node n24 = new Node();
-        n24.setText("Cthulhu nervously puts his cucumbers back on and explains, 'I'm ready for you, Nyarlathotep.' After uttering those words, Nyarlathotep kisses him on the cheek and says, 'I’m looking for someone more assertive and that just isn't you right now. Sorry, darling, I'm just not feeling it anymore. Maybe we can try this another time.' Cthulhu felt stung by his words, but knew there was truth in what he said. As cthulhu was contemplating what to say next, his phone alarm went off.");
+        n24.setText("As cthulhu was contemplating what to say next, his phone alarm went off.");
         n24.setNext(n25);
+
+        Node fUp14 = new Node();
+        fUp14.setText("'I’m looking for someone more assertive and that just isn't you right now. Sorry, darling, I'm just not feeling it anymore. Maybe we can try this another time.' Cthulhu felt stung by his words, but knew there was truth in what he said.");
+        fUp14.setNext(n24);
+        n24.setPrevious(fUp14);
+
+        Node fUp13 = new Node();
+        fUp13.setText("Cthulhu nervously puts his cucumbers back on and explains, 'I'm ready for you, Nyarlathotep.' After uttering those words, Nyarlathotep kisses him on the cheek and says,");
+        fUp13.setNext(fUp14);
+        fUp14.setPrevious(fUp13);
 
         Node n23 = new Node();
         n23.setText("Cthulhu, knowing he had ruined the mood, said, ' I'm sorry, I just need some space. I wasn't ready for something like that.' Cthulhu hugs Nyarlathotep, apologizing for the slap. Just as the hug ends, Cthulhu’s phone alarm goes off.");
         n23.setNext(n25);
 
         Node n22 = new Node();
-        n22.setText("Cthulhu embraced Nyarlathotep, his tentacles intermingling with Nyarlathotep’s hands. Both monsters were locked in place, wishing this moment could go on forever. Just when the tension was at its peak, they were interrupted by the sound of Cthulhu’s phone alarm.");
+        n22.setText("Just when the tension was at its peak, they were interrupted by the sound of Cthulhu’s phone alarm.");
         n22.setNext(n25);
+
+        Node fUp12 = new Node();
+        fUp12.setText("Cthulhu embraced Nyarlathotep, his tentacles intermingling with Nyarlathotep’s hands. Both monsters were locked in place, wishing this moment could go on forever.");
+        fUp12.setNext(n22);
+        n22.setPrevious(fUp12);
 
         Node n21 = new Node();
         n21.setText("Puts his cucumbers back on and goes with the flow");
         n21.setRating("good");
         n21.setStat("1Choice3Option3");
-        n21.setNext(n24);
+        n21.setNext(fUp13);
 
         Node n20 = new Node();
         n20.setText("Slaps Nyarlathotep, pushing him away");
@@ -277,27 +381,46 @@ public class GameManager : MonoBehaviour
         n19.setText("Sensually kisses Nyarlathotep back");
         n19.setRating("real good");
         n19.setStat("1Choice3Option1");
-        n19.setNext(n22);
+        n19.setNext(fUp12);
 
         Node n18 = new Node();
-        n18.setText("As Nyarlathotep starts applying oil, he tells Cthulhu, 'To really get the full experience, you need to put these on. They really help with your complexion.' Nyarlathotep hands Cthulhu pieces of cucumber to place over each eye. Nyarlathotep then goes on to massage Cthulhu’s massive back. He feels Nyarlathotep’s gentle caress on each and every tentacle as he starts getting closer and closers to Cthulhu’s neck. Without warning, Nyarlathotep massage stops. Cthulhu, wondering why he stopped, says, 'Nyarlathotep are you still back there?'. As Cthulhu takes off his cucumber slices, Nyarlathotep silently goes in for a kiss. Before Cthulhu can realize what is happening, he");
+        n18.setText("Cthulhu, wondering why he stopped, says, 'Nyarlathotep are you still back there?'. As Cthulhu takes off his cucumber slices, Nyarlathotep silently goes in for a kiss. Before Cthulhu can realize what is happening, he");
         n18.setOption1(n19);
         n18.setOption2(n20);
         n18.setOption3(n21);
-        
+
+        Node fUp11 = new Node();
+        fUp11.setText("Nyarlathotep then goes on to massage Cthulhu’s massive back. He feels Nyarlathotep’s gentle caress on each and every tentacle as he starts getting closer and closers to Cthulhu’s neck. Without warning, Nyarlathotep massage stops.");
+        fUp11.setNext(n18);
+        n18.setPrevious(fUp11);
+
+        Node fUp10 = new Node();
+        fUp10.setText("As Nyarlathotep starts applying oil, he tells Cthulhu, 'To really get the full experience, you need to put these on. They really help with your complexion.' Nyarlathotep hands Cthulhu pieces of cucumber to place over each eye.");
+        fUp10.setNext(fUp11);
+        fUp11.setPrevious(fUp10);
+
+        Node fUp9 = new Node();
+        fUp9.setText("'Oh I don't think so! I bet you would smell delicious', Nyarlathotep says while licking his lips. Begrudgingly, Cthulhu accepts the offer, knowing what Nyarlathotep would do if he was denied his fun.");
+        fUp9.setNext(fUp10);
+        fUp10.setPrevious(fUp9);
 
         Node n17 = new Node();
-        n17.setText("After Cthulhu had finished applying oil to Nyarlathotep’s back, Nyarlathotep insisted it was Cthulhu’s turn next. 'No, no, I really don't tan, I burn and smell like calamari', Cthulhu blushingly admits. 'Oh I don't think so! I bet you would smell delicious', Nyarlathotep says while licking his lips. Begrudgingly, Cthulhu accepts the offer, knowing what Nyarlathotep would do if he was denied his fun.");
-        n17.setNext(n18);
-        n18.setPrevious(n17);
+        n17.setText("After Cthulhu had finished applying oil to Nyarlathotep’s back, Nyarlathotep insisted it was Cthulhu’s turn next. 'No, no, I really don't tan, I burn and smell like calamari', Cthulhu blushingly admits.");
+        n17.setNext(fUp9);
+        fUp9.setPrevious(n17);
 
         Node n16 = new Node();
         n16.setText("'Those tentacles of yours are just Divine. If you weren't my friend I would hire you on the spot, darling.'");
         n16.setNext(n17);
 
+        Node fUp8 = new Node();
+        fUp8.setText("'You just don't understand the effort I put in to look this good every day.'");
+        fUp8.setNext(n17);
+
         Node n15 = new Node();
-        n15.setText("'Why do you even need to tan when you can change the color of your skin?', inquiries Cthulhu. This causes Nyarlathotep to start berating, 'I told you to apply the oil! I’m trying to go for a natural tan look, not a pale as a ghost look .You just don't understand the effort I put in to look this good every day.'");
-        n15.setNext(n17);
+        n15.setText("'Why do you even need to tan when you can change the color of your skin?', inquiries Cthulhu. This causes Nyarlathotep to start berating: 'I told you to apply the oil! I’m trying to go for a natural tan look, not a pale as a ghost look.'");
+        n15.setNext(fUp8);
+        fUp8.setPrevious(n15);
 
         Node n14 = new Node();
         n14.setText("Start applying oil , then go in for the back rub");
@@ -318,21 +441,35 @@ public class GameManager : MonoBehaviour
         n12.setNext(n15);
 
         Node n11 = new Node();
-        n11.setText("Cthulhu smirked and said, 'Nice party trick. Where did you send them to?'. Nyarlathotep, giddy with excitement, tells Cthulhu, 'You'll find out soon, sweetie. In the meantime, why don't you help me rub some lotion on my back. I'm trying to tan the natural way, really get a feel for how the humans do it. They might not be good for much, but they sure do know how to make a fine tanning oil.'");
+        n11.setText("'I'm trying to tan the natural way, really get a feel for how the humans do it. They might not be good for much, but they sure do know how to make a fine tanning oil.'");
         n11.setOption1(n12);
         n11.setOption2(n13);
         n11.setOption3(n14);
-       
+
+        Node fUp7 = new Node();
+        fUp7.setText("Cthulhu smirked and said, 'Nice party trick. Where did you send them to?'. Nyarlathotep, giddy with excitement, tells Cthulhu, 'You'll find out soon, sweetie. In the meantime, why don't you help me rub some lotion on my back.'");
+        fUp7.setNext(n11);
+        n11.setPrevious(fUp7);
+
+        Node fUp6 = new Node();
+        fUp6.setText("Suddenly, every frozen paparazzi began sinking into the sand, leaving only three things left on the beach: Cthulhu, Nyarlathotep and a beach towel for two.");
+        fUp6.setNext(fUp7);
+        fUp7.setPrevious(fUp6);
 
         Node n10 = new Node();
-        n10.setText("With a single snap from Nyarlathotep’s fingers, the entire crowd seems to shudder and freeze. Not a single sound could be heard, except for the crashing of the waves. Suddenly, every frozen paparazzi began sinking into the sand, leaving only three things left on the beach: Cthulhu, Nyarlathotep and a beach towel for two.");
-        n10.setNext(n11);
-        n11.setPrevious(n10);
+        n10.setText("With a single snap from Nyarlathotep’s fingers, the entire crowd seems to shudder and freeze. Not a single sound could be heard, except for the crashing of the waves.");
+        n10.setNext(fUp6);
+        fUp6.setPrevious(n10);
+
+        Node fUp5 = new Node();
+        fUp5.setText("Nyarlathotep shakes his head, reluctantly holding down a chuckle saying, 'Cthulhu, The Great Old One, can’t handle a small crowd. You sure know how to make me laugh, old pal.'");
+        fUp5.setNext(n10);
+        n10.setPrevious(fUp5);
 
         Node n9 = new Node();
-        n9.setText("After greeting Cthulhu, Nyarlathotep asked with a smile, 'Why are you so nervous, haven’t you ever been to a photo shoot?'. Cthulhu looked at him, groaning as he said, 'You know I hate crowds'. Nyarlathotep shakes his head, reluctantly holding down a chuckle saying, 'Cthulhu, The Great Old One, can’t handle a small crowd. You sure know how to make me laugh, old pal.'");
-        n9.setNext(n10);
-        n10.setPrevious(n9);
+        n9.setText("After greeting Cthulhu, Nyarlathotep asked with a smile, 'Why are you so nervous, haven’t you ever been to a photo shoot?'. Cthulhu looked at him, groaning as he said, 'You know I hate crowds'.");
+        n9.setNext(fUp5);
+        fUp5.setPrevious(n9);
 
         Node n8 = new Node();
         n8.setText("'I’ve worked very hard to get all 4 of my Instagram’s to the top of the charts? Oh wait, all you do is sleep all year, so what would you know…'");
@@ -361,20 +498,40 @@ public class GameManager : MonoBehaviour
         n4.setNext(n7);
 
         Node n3 = new Node();
-        n3.setText("It is at this point that Cthulhu found the source of the photographers’ obsession. Standing in the center of this massive circle of monsters was an impossibly handsome man whose appearance seemed to get more beautiful the longer he stared at him. Cthulhu recognized this man as Nyarlathotep, The Crawling Chaos, a shape shifter with a pension towards narcissism. As Cthulhu walked up to greet him he said");
+        n3.setText("Cthulhu recognized this man as Nyarlathotep, The Crawling Chaos, a shape shifter with a pension towards narcissism. As Cthulhu walked up to greet him he said");
         n3.setOption1(n4);
         n3.setOption2(n5);
         n3.setOption3(n6);
 
+        Node fUp4 = new Node();
+        fUp4.setText("Standing in the center of this massive circle of monsters was an impossibly handsome man whose appearance seemed to get more beautiful the longer he stared at him.");
+        fUp4.setNext(n3);
+        n3.setPrevious(fUp4);
+
+        Node fUp3 = new Node();
+        fUp3.setText("Fed up from getting the same answer, Cthulhu forced his way into the center of the circle. It is at this point that Cthulhu found the source of the photographers’ obsession.");
+        fUp3.setNext(fUp4);
+        fUp4.setPrevious(fUp3);
+
+        Node fUp2 = new Node();
+        fUp2.setText("Cthulhu, confused by the scene, asked one of the photographers what was happening, only for them to reply, ‘He’s gorgeous.’. Perplexed by this answer, he ask another photographer, then another, then another.");
+        fUp2.setNext(fUp3);
+        fUp3.setPrevious(fUp2);
+
         Node n2 = new Node();
-        n2.setText("As he reached the shore, Cthulhu noticed something off about the people there. Each and every monster was huddled in a circle, surrounding one person as they tried taking pictures of them. Cthulhu, confused by the scene, asked one of the photographers what was happening, only for them to reply, ‘He’s gorgeous.’. Perplexed by this answer, he ask another photographer, then another, then another. Fed up from getting the same answer, Cthulhu forced his way into the center of the circle.");
-        n2.setNext(n3);
-        n3.setPrevious(n2);
+        n2.setText("As he reached the shore, Cthulhu noticed something off about the people there. Each and every monster was huddled in a circle, surrounding one person as they tried taking pictures of them.");
+        n2.setNext(fUp2);
+        fUp2.setPrevious(n2);
+
+        Node fUp1 = new Node();
+        fUp1.setText("Cthulhu had always hated the beach, too much sand and too many people. However, not even he would not miss an invitation to spend time with Nyarlathotep.");
+        fUp1.setNext(n2);
+        n2.setPrevious(fUp1);
 
         Node n1 = new Node();
-        n1.setText("Cthulhu feels sand at his feet as he rises from the ocean to a luxurious beach filled to the brim with people. As he gets closer to the shoreline, he notices a sign with the words ‘Penumbra beach’ etched into the small wooden post. Cthulhu had always hated the beach, too much sand and too many people. However, not even he would not miss an invitation to spend time with Nyarlathotep.");
-        n1.setNext(n2);
-        n2.setPrevious(n1);
+        n1.setText("Cthulhu feels sand at his feet as he rises from the ocean to a luxurious beach filled to the brim with people. As he gets closer to the shoreline, he notices a sign with the words ‘Penumbra beach’ etched into the small wooden post.");
+        n1.setNext(fUp1);
+        fUp1.setPrevious(n1);
    
 
         // set root node
@@ -384,8 +541,13 @@ public class GameManager : MonoBehaviour
     // Create day 1 part 3 tree
     public void createPart3Tree()
     {
+        Node fUp12 = new Node();
+        fUp12.setText("He was almost startled by the sound of a building being crushed under his foot. “Wow”, he thought, “What a mess.”");
+
         Node n73 = new Node();
-        n73.setText("Shub-Niggurath began ascending to space. Cthulhu waved her goodbye and began walking towards the ocean. He was almost startled by the sound of a building being crushed under his foot. “Wow”, he thought, “What a mess.”");
+        n73.setText("Shub-Niggurath began ascending to space. Cthulhu waved her goodbye and began walking towards the ocean.");
+        n73.setNext(fUp12);
+        fUp12.setPrevious(n73);
 
         Node n72 = new Node();
         n72.setText("“Perhaps.”, she said with a wink.");
@@ -464,6 +626,7 @@ public class GameManager : MonoBehaviour
         Node n57 = new Node();
         n57.setText("Shub smiled, surprised by his actions.");
         n57.setNext(n58);
+        n58.setPrevious(n57);
 
         Node n56 = new Node();
         n56.setText("She smiled. “I would love to.”");
@@ -497,6 +660,7 @@ public class GameManager : MonoBehaviour
         Node n50 = new Node();
         n50.setText("“Have I ever told you that you have the most beautiful tentacles I have ever seen?”");
         n50.setNext(n51);
+        n51.setPrevious(n50);
 
         Node n49 = new Node();
         n49.setText("“Yeah, you are.”");
@@ -517,9 +681,20 @@ public class GameManager : MonoBehaviour
         n46.setNext(n47);
         n47.setPrevious(n46);
 
+        Node fUp11 = new Node();
+        fUp11.setText("After a while, the credits begin rolling, and they let go of each other.");
+        fUp11.setNext(n46);
+        n46.setPrevious(fUp11);
+
+        Node fUp10 = new Node();
+        fUp10.setText("The sight and sounds of the two sets of tentacles rubbing and twisting around each other is enough to break the minds of all surviving humans in an 8 mile radius.");
+        fUp10.setNext(fUp11);
+        fUp11.setPrevious(fUp10);
+        
         Node n45 = new Node();
-        n45.setText("Before he can barely approach Shub’s face, her tentacles are already wrapping around his. The sight and sounds of the two sets of tentacles rubbing and twisting around each other is enough to break the minds of all surviving humans in an 8 mile radius. After a while, the credits begin rolling, and they let go of each other.");
-        n45.setNext(n46);
+        n45.setText("Before he can barely approach Shub’s face, her tentacles are already wrapping around his.");
+        n45.setNext(fUp10);
+        fUp10.setPrevious(n45);
 
         Node n44 = new Node();
         n44.setText("Shyly look back at the screen.");
@@ -547,10 +722,6 @@ public class GameManager : MonoBehaviour
         n41.setOption1(n42);
         n41.setOption2(n43);
         n41.setOption3(n44);
-        n42.setPrevious(n41);
-        n43.setPrevious(n41);
-        n44.setPrevious(n41);
-        n67.setPrevious(n41);
 
         Node n40 = new Node();
         n40.setText("Shub snorted as she laughed. “That’s sad.”");
@@ -812,33 +983,45 @@ public class GameManager : MonoBehaviour
     // Create tree for onboarding
     public void createOnboardingTree()
     {
+        Node n9 = new Node();
+        n9.setText("Each monster prefers a particular mate, figure out their ideal monster to quickly win their hearts!");
+
         Node n8 = new Node();
-        n8.setText("Notice how you gained affection from your choice? Each response will have either a positive or negative effect on your level of affection. Each monster prefers a particular mate, figure out their ideal monster to quickly win their hearts!");
+        n8.setText("Notice how you gained affection from your choice? Each response will have either a positive or negative effect on your level of affection.");
+        n8.setNext(n9);
+        n9.setPrevious(n8);
+
         Node n7 = new Node();
         n7.setText("I'm the best choice!");
         n7.setRating("good");
         n7.setNext(n8);
+
         Node n6 = new Node();
         n6.setText("No Pick me!");
         n6.setRating("good");
         n6.setNext(n8);
+
         Node n5 = new Node();
         n5.setText("Pick me!");
         n5.setRating("good");
         n5.setNext(n8);
+
         Node n4 = new Node();
         n4.setText("Every so often, dialog options will pop up below. Each option affects the level of affection the current monster has for you, try it out!");
         n4.setOption1(n5);
         n4.setOption2(n6);
         n4.setOption3(n7);
+
         Node n3 = new Node();
         n3.setText("In this game, you'll meet numerous Lovecraftian monsters in the hopes of soothing Cthulhu's lonely heart.");
         n3.setNext(n4);
         n4.setPrevious(n3);
+
         Node n2 = new Node();
         n2.setText("If you ever want to re-read previous dialog, press the previous button");
         n2.setNext(n3);
         n3.setPrevious(n2);
+
         Node n1 = new Node();
         n1.setText("Welcome to Date Or Die! This game is a dating sim that focuses on the dating life of our all powerful Cthulhu. Press the next button to see the next line of dialog.");
         n1.setNext(n2);
