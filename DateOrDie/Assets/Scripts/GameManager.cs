@@ -111,6 +111,10 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("2Choice3Option2", 0);
             PlayerPrefs.SetInt("2Choice3Option3", 0);
         }
+        if (sceneName == "IntroCutScene")
+        {
+            createIntroTree();
+        }
     }
 
     // Create day 1 part 1 tree
@@ -532,7 +536,7 @@ public class GameManager : MonoBehaviour
         n1.setText("Cthulhu feels sand at his feet as he rises from the ocean to a luxurious beach filled to the brim with people. As he gets closer to the shoreline, he notices a sign with the words ‘Penumbra beach’ etched into the small wooden post.");
         n1.setNext(fUp1);
         fUp1.setPrevious(n1);
-   
+
 
         // set root node
         setCurrentNode(n1);
@@ -690,7 +694,7 @@ public class GameManager : MonoBehaviour
         fUp10.setText("The sight and sounds of the two sets of tentacles rubbing and twisting around each other is enough to break the minds of all surviving humans in an 8 mile radius.");
         fUp10.setNext(fUp11);
         fUp11.setPrevious(fUp10);
-        
+
         Node n45 = new Node();
         n45.setText("Before he can barely approach Shub’s face, her tentacles are already wrapping around his.");
         n45.setNext(fUp10);
@@ -1028,6 +1032,30 @@ public class GameManager : MonoBehaviour
         n2.setPrevious(n1);
 
         // set root node
+        setCurrentNode(n1);
+    }
+
+    public void createIntroTree()
+    {
+        Node n4 = new Node();
+        n4.setText("The user then has the choice to look at 3 different text messages, and can choose which date to go on first.");
+
+        Node n3 = new Node();
+        n3.setText("“Ah well, I better start tryna get to know these rascals!”");
+        n3.setNext(n4);
+        n4.setPrevious(n3);
+
+        Node n2 = new Node();
+        n2.setText("The calendar shows a written note that says “Find date for the apocalypse”. Cthulhu looks at his phone, and finds that he has 3 text messages from 3 different monsters.");
+        n2.setNext(n3);
+        n3.setPrevious(n2);
+
+        Node n1 = new Node();
+        n1.setText("Cthulhu wakes up after his hundred year slumber, just about a month before the apocalypse. “Tartar Sauce” Cthulhu thinks, while it zooms in on the calendar.");
+        n1.setNext(n2);
+        n2.setPrevious(n1);
+
+        //set root node
         setCurrentNode(n1);
     }
 
