@@ -872,7 +872,7 @@ public class GameManager : MonoBehaviour
         n19.setPrevious(n18);
 
         Node n17 = new Node();
-        n17.setText("Under his breath, Cthulhu muttered something, sad about his ARTICLE OF CLOTHING. He sat down on the ground slightly behind the projector, while Shub-Niggurath fiddled with it.");
+        n17.setText("He sat down on the ground slightly behind the projector, while Shub-Niggurath fiddled with it. 'My first film in a century.', Cthulhu thought, as he fidgeted with excitement.");
         n17.setNext(n18);
         n18.setPrevious(n17);
 
@@ -919,7 +919,7 @@ public class GameManager : MonoBehaviour
         n8.setNext(n11);
 
         Node n7 = new Node();
-        n7.setText("“Damnit, Shub. You’re not only late, but you managed to destroy the movie theater I got reservations for!”");
+        n7.setText("“Damnit, Shub. You’re not only late, but you managed to destroy the movie theater!”");
         n7.setRating("bad");
         n7.setStat("2Choice1Option3");
         n7.setNext(n10);
@@ -956,7 +956,7 @@ public class GameManager : MonoBehaviour
         fUp4.setPrevious(n3);
 
         Node fUp3 = new Node();
-        fUp3.setText("DESCRIBE OUTFIT. He was perfectly disguised. It couldn’t be him. Upon closer inspection of the crowd, he saw a few were looking up.");
+        fUp3.setText("Cthulhu was wearing his birthday suit, like many humans nowadays. He was perfectly disguised. It couldn’t be him. Upon closer inspection of the crowd, he saw a few were looking up.");
         fUp3.setNext(n3);
         n3.setPrevious(fUp3);
 
@@ -976,7 +976,7 @@ public class GameManager : MonoBehaviour
         n2.setPrevious(fUp1);
 
         Node n1 = new Node();
-        n1.setText("Cthulhu looked down at his phone. “8:00 pm at the Honeyview Movie Theater xoxoxo”. It was 8:15. His tentacles flailed out from underneath his CLOTHES as he sighed in exasperation.");
+        n1.setText("Cthulhu looked down at his phone. “8:00 pm at the Honeyview Movie Theater xoxoxo”. It was 8:15. His tentacles flailed out as he sighed in exasperation.");
         n1.setNext(fUp1);
         fUp1.setPrevious(n1);
 
@@ -1022,7 +1022,7 @@ public class GameManager : MonoBehaviour
         n4.setPrevious(n3);
 
         Node n2 = new Node();
-        n2.setText("If you ever want to re-read previous dialog, press the previous button");
+        n2.setText("If you ever want to re-read previous dialog, press the previous button. To go back to main menu, press the main menu button.");
         n2.setNext(n3);
         n3.setPrevious(n2);
 
@@ -1038,20 +1038,20 @@ public class GameManager : MonoBehaviour
     public void createIntroTree()
     {
         Node n4 = new Node();
-        n4.setText("The user then has the choice to look at 3 different text messages, and can choose which date to go on first.");
+        n4.setText("Cthulhu reads the messages and decides who he'll meet today.");
 
         Node n3 = new Node();
-        n3.setText("“Ah well, I better start tryna get to know these rascals!”");
+        n3.setText("'I better get up, or I'll never find a date in time!'");
         n3.setNext(n4);
         n4.setPrevious(n3);
 
         Node n2 = new Node();
-        n2.setText("The calendar shows a written note that says “Find date for the apocalypse”. Cthulhu looks at his phone, and finds that he has 3 text messages from 3 different monsters.");
+        n2.setText("'I have to find a date for the apocalypse!'. Cthulhu looks at his phone and sees text messages from 3 different monsters.");
         n2.setNext(n3);
         n3.setPrevious(n2);
 
         Node n1 = new Node();
-        n1.setText("Cthulhu wakes up after his hundred year slumber, just about a month before the apocalypse. “Tartar Sauce” Cthulhu thinks, while it zooms in on the calendar.");
+        n1.setText("Cthulhu wakes up after his hundred year slumber, just about a month before the apocalypse. “Shoot!”, Cthulhu thinks, while looking at the calendar.");
         n1.setNext(n2);
         n2.setPrevious(n1);
 
@@ -1082,7 +1082,7 @@ public class GameManager : MonoBehaviour
         else // end condition
         {
             nextButton.SetActive(false);
-            if (sceneName != "Onboarding") endButton.SetActive(true);
+            if (sceneName != "Onboarding" && sceneName!= "IntroCutScene") endButton.SetActive(true);
             else startButton.SetActive(true);
         }
     }
@@ -1093,10 +1093,13 @@ public class GameManager : MonoBehaviour
         displayCurrentNode();
 
         // Update affection bar itself
-        GameObject.Find("AffectionBar").GetComponent<Image>().fillAmount = affectionBar;
-        GameObject.Find("AffectionBarValue").GetComponent<Text>().text = (int)(affectionBar * 100) + "%";
-        // Update affection playerpref
-        if (affectionBarName != "onboarding") PlayerPrefs.SetFloat(affectionBarName, affectionBar);
+        if (sceneName != "IntroCutScene")
+        {
+            GameObject.Find("AffectionBar").GetComponent<Image>().fillAmount = affectionBar;
+            GameObject.Find("AffectionBarValue").GetComponent<Text>().text = (int)(affectionBar * 100) + "%";
+            // Update affection playerpref
+            if (affectionBarName != "onboarding") PlayerPrefs.SetFloat(affectionBarName, affectionBar);
+        }
     }
 
     void OnApplicationQuit()

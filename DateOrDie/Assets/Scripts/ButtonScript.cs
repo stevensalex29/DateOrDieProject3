@@ -69,43 +69,49 @@ public class ButtonScript : MonoBehaviour
     // End date
     public void EndDate()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("StatScreen");
+        SceneManager.LoadScene("StatScreen");
     }
 
     // Start game
     public void StartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Day1Part1");
+        SceneManager.LoadScene("Day1Part1");
     }
 
     // Begin Onboarding
     public void Onboarding()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Onboarding");
+        SceneManager.LoadScene("Onboarding");
+    }
+
+    // Begin game
+    public void Intro()
+    {
+        SceneManager.LoadScene("IntroCutScene");
     }
 
     // Go to date 1
     public void Date1()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Day1Part1");
+        SceneManager.LoadScene("Day1Part1");
     }
 
     // Go to date 2
     public void Date2()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Day1Part2");
+        SceneManager.LoadScene("Day1Part2");
     }
 
     // Go to date 3
     public void Date3()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Day1Part3");
+        SceneManager.LoadScene("Day1Part3");
     }
 
     // Choose date screen
     public void ChooseDate()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("ChooseDate");
+        SceneManager.LoadScene("ChooseDate");
     }
 
     // Quit game
@@ -117,6 +123,6 @@ public class ButtonScript : MonoBehaviour
     // Main Menu
     public void MainMenu()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu");
     }
 }
