@@ -146,25 +146,25 @@ public class GameManager : MonoBehaviour
         fUp10.setPrevious(n26);
 
         Node n25 = new Node();
-        n25.setText("Sloppily kisses Tsathoggua back");
+        n25.setText("sloppily kisses Tsathoggua back.");
         n25.setRating("real good");
         n25.setStat("Choice4Option3");
         n25.setNext(n28);
 
         Node n24 = new Node();
-        n24.setText("Struggles and breaks free");
+        n24.setText("struggles and breaks free.");
         n24.setRating("bad");
         n24.setStat("Choice4Option2");
         n24.setNext(n27);
 
         Node n23 = new Node();
-        n23.setText("Passes out from the overwhelming pressure of Tsathoggua's strength");
+        n23.setText("passes out from the overwhelming pressure of Tsathoggua's strength.");
         n23.setRating("good");
         n23.setStat("Choice4Option1");
         n23.setNext(n26);
 
         Node n22 = new Node();
-        n22.setText("Before Cthulhu can say anything, he is attacked by an overwhelmingly sloppy kiss. His tentacles flail everywhere as Tsathoggua's brute strength lifts him off the ground. Cthulhu");
+        n22.setText("Before Cthulhu can say anything, he is attacked by an overwhelmingly sloppy kiss. His tentacles flail everywhere as Tsathoggua's brute strength lifts him off the ground. Cthulhu...");
         n22.setOption1(n23);
         n22.setOption2(n24);
         n22.setOption3(n25);
@@ -193,31 +193,31 @@ public class GameManager : MonoBehaviour
         n19.setNext(n21);
 
         Node n18 = new Node();
-        n18.setText("Spits the coffee out when Tsathoggua isn't looking");
+        n18.setText("spits the coffee out when Tsathoggua isn't looking.");
         n18.setRating("good");
         n18.setStat("Choice3Option3");
         n18.setNext(n20);
 
         Node n17 = new Node();
-        n17.setText("Swallows the mouthful he has and sets the cup down");
+        n17.setText("swallows what he has and sets the cup down.");
         n17.setRating("real good");
         n17.setStat("Choice3Option2");
         n17.setNext(n20);
 
         Node n16 = new Node();
-        n16.setText("Spits the coffee out mid-sip");
+        n16.setText("spits the coffee out mid-sip.");
         n16.setRating("bad");
         n16.setStat("Choice3Option1");
         n16.setNext(n19);
 
         Node n15 = new Node();
-        n15.setText("'Wow, what makes this coffee so good, the humans?', he says as he continues sipping. Tsathoggua smirks and says, 'The coffee these worshippers bring me is quite aweful, so I add a secret ingredient, excrement!'. Cthulhu's eyes widen and he");
+        n15.setText("'Wow, what makes this coffee so good, the humans?', he says as he continues sipping. Tsathoggua smirks and says, 'The coffee those worshippers bring me is quite aweful, so I add a secret ingredient, excrement!'. Cthulhu's eyes widen and he...");
         n15.setOption1(n16);
         n15.setOption2(n17);
         n15.setOption3(n18);
 
         Node fUp7 = new Node();
-        fUp7.setText("Cthulhu looks at Tsathoggua, 'No problem Tsath, I couldn't get ready for the apocalypse and not see the laziest monster I know first, what kind of monster would I be?'. Cthulhu sips the coffee, surprised by how good it actually is.");
+        fUp7.setText("Cthulhu looks at Tsathoggua, 'No problem Tsath, I couldn't start the apocalypse without seeing your lazy self, what kind of monster would I be?'. Cthulhu sips the coffee, surprised by how good it actually is.");
         fUp7.setNext(n15);
         n15.setPrevious(fUp7);
 
@@ -227,31 +227,31 @@ public class GameManager : MonoBehaviour
         fUp7.setPrevious(n14);
 
         Node n13 = new Node();
-        n13.setText("Allow it to happen");
+        n13.setText("allow it to happen.");
         n13.setRating("real good");
         n13.setStat("Choice2Option3");
         n13.setNext(n14);
 
         Node n12 = new Node();
-        n12.setText("Slightly move to assess the situation");
+        n12.setText("slightly move to assess the situation.");
         n12.setRating("good");
         n12.setStat("Choice2Option2");
         n12.setNext(n14);
 
         Node n11 = new Node();
-        n11.setText("Quickly move away, disgusted");
+        n11.setText("quickly move away, disgusted.");
         n11.setRating("bad");
         n11.setStat("Choice2Option1");
         n11.setNext(n14);
 
         Node n10 = new Node();
-        n10.setText("Cthulhu laughs at his friend's misfortune and is quickly surrounded by a gelatinous mountain of hairy fur as Tsathoggua embraces him. Cthulhu decides to");
+        n10.setText("Cthulhu laughs at his friend's misfortune and is quickly surrounded by a gelatinous mountain of hairy fur as Tsathoggua embraces him. Cthulhu decides to...");
         n10.setOption1(n11);
         n10.setOption2(n12);
         n10.setOption3(n13);
 
         Node fUp6 = new Node();
-        fUp6.setText("'Lately, all of these humans have been coming to worship me', Tsathoggua says. 'I told them I like coffee and they bought me some, but now they won't stop! At least they built the shack and put up signs like I asked!'.");
+        fUp6.setText("'Lately, all of these humans have been coming to worship me', Tsathoggua says. 'I told them I like coffee and they brought me some, but now they won't stop! At least they built the shack and put up signs like I asked!'.");
         fUp6.setNext(n10);
         n10.setPrevious(fUp6);
 
@@ -289,7 +289,7 @@ public class GameManager : MonoBehaviour
         n6.setNext(n8);
 
         Node n5 = new Node();
-        n5.setText("'Tsath, buddy, these last decades have treated you good!'");
+        n5.setText("'These last decades have treated you good, Tsath!'");
         n5.setRating("good");
         n5.setStat("Choice1Option3");
         n5.setNext(n6);
@@ -307,7 +307,7 @@ public class GameManager : MonoBehaviour
         n3.setNext(n6);
 
         Node n2 = new Node();
-        n2.setText("Tsathoggua was as huge, hairy, and pot-bellied as Cthulhu had remembered, the sight and smell of the room prompted him to say");
+        n2.setText("Tsathoggua was as huge, hairy, and pot-bellied as Cthulhu had remembered, the sight and smell of the room prompted him to say...");
         n2.setOption1(n3);
         n2.setOption2(n4);
         n2.setOption3(n5);
@@ -335,15 +335,15 @@ public class GameManager : MonoBehaviour
     public void createPart2Tree()
     {
         Node fUp15 = new Node();
-        fUp15.setText("'Just don’t make me wait too long. Or I'll find someone to replace those big shoes of yours.', Nyarlathotep slyly remarked, knowing no one could compare to Cthulhu.");
+        fUp15.setText("'Just don’t make me wait too long or I'll find someone to replace those big shoes of yours.', Nyarlathotep slyly remarked, knowing no one could compare to Cthulhu.");
 
         Node n25 = new Node();
-        n25.setText("Cthulhu looked at his phone, seeing the reminder for his next date. 'Sorry, Nyarlathotep, we’ll just have to pick up where we left off next time.', Cthulhu said with an excited look as he walked back into the bay to leave.");
+        n25.setText("Cthulhu looked at his phone, seeing the reminder for his next date. 'Sorry, Nyarlathotep, we'll have to pick up where we left off next time.', Cthulhu said with a sad look as he walked back into the bay to leave.");
         n25.setNext(fUp15);
         fUp15.setPrevious(n25);
 
         Node n24 = new Node();
-        n24.setText("As cthulhu was contemplating what to say next, his phone alarm went off.");
+        n24.setText("As Cthulhu was contemplating what to say next, his phone alarm went off.");
         n24.setNext(n25);
 
         Node fUp14 = new Node();
@@ -370,36 +370,36 @@ public class GameManager : MonoBehaviour
         n22.setPrevious(fUp12);
 
         Node n21 = new Node();
-        n21.setText("Puts his cucumbers back on and goes with the flow");
+        n21.setText("puts his cucumbers back on and goes with the flow.");
         n21.setRating("good");
         n21.setStat("1Choice3Option3");
         n21.setNext(fUp13);
 
         Node n20 = new Node();
-        n20.setText("Slaps Nyarlathotep, pushing him away");
+        n20.setText("slaps Nyarlathotep, pushing him away.");
         n20.setRating("bad");
         n20.setStat("1Choice3Option2");
         n20.setNext(n23);
 
         Node n19 = new Node();
-        n19.setText("Sensually kisses Nyarlathotep back");
+        n19.setText("sensually kisses Nyarlathotep back.");
         n19.setRating("real good");
         n19.setStat("1Choice3Option1");
         n19.setNext(fUp12);
 
         Node n18 = new Node();
-        n18.setText("Cthulhu, wondering why he stopped, says, 'Nyarlathotep are you still back there?'. As Cthulhu takes off his cucumber slices, Nyarlathotep silently goes in for a kiss. Before Cthulhu can realize what is happening, he");
+        n18.setText("Cthulhu, wondering why he stopped, says, 'Nyarlathotep are you still back there?'. As Cthulhu takes off his cucumber slices, Nyarlathotep silently goes in for a kiss. When Cthulhu realizes what is happening, he...");
         n18.setOption1(n19);
         n18.setOption2(n20);
         n18.setOption3(n21);
 
         Node fUp11 = new Node();
-        fUp11.setText("Nyarlathotep then goes on to massage Cthulhu’s massive back. He feels Nyarlathotep’s gentle caress on each and every tentacle as he starts getting closer and closers to Cthulhu’s neck. Without warning, Nyarlathotep massage stops.");
+        fUp11.setText("Nyarlathotep goes on to massage Cthulhu’s massive back. He feels Nyarlathotep’s gentle caress on each and every tentacle as he starts getting closer and closers to Cthulhu’s neck. Without warning, Nyarlathotep massage stops.");
         fUp11.setNext(n18);
         n18.setPrevious(fUp11);
 
         Node fUp10 = new Node();
-        fUp10.setText("As Nyarlathotep starts applying oil, he tells Cthulhu, 'To really get the full experience, you need to put these on. They really help with your complexion.' Nyarlathotep hands Cthulhu pieces of cucumber to place over each eye.");
+        fUp10.setText("As Nyarlathotep starts applying oil, he tells Cthulhu, 'To truly get the full experience, you need to put these on. They really help with your complexion.' Nyarlathotep hands Cthulhu pieces of cucumber to place over each eye.");
         fUp10.setNext(fUp11);
         fUp11.setPrevious(fUp10);
 
@@ -414,49 +414,49 @@ public class GameManager : MonoBehaviour
         fUp9.setPrevious(n17);
 
         Node n16 = new Node();
-        n16.setText("'Those tentacles of yours are just Divine. If you weren't my friend I would hire you on the spot, darling.'");
+        n16.setText("'Those tentacles of yours are just DIVINE. If you weren't my friend, I would hire you on the spot, darling.'");
         n16.setNext(n17);
 
         Node fUp8 = new Node();
-        fUp8.setText("'You just don't understand the effort I put in to look this good every day.'");
+        fUp8.setText("'You don't understand the effort I put in every day to look this gorgeous!'");
         fUp8.setNext(n17);
 
         Node n15 = new Node();
-        n15.setText("'Why do you even need to tan when you can change the color of your skin?', inquiries Cthulhu. This causes Nyarlathotep to start berating: 'I told you to apply the oil! I’m trying to go for a natural tan look, not a pale as a ghost look.'");
+        n15.setText("'Why do you even need to tan when you can change the color of your skin?', inquiries Cthulhu. This causes Nyarlathotep to start berating,'I told you to apply the oil! I’m trying to go for a natural tan look, not a pale as a ghost look.'.");
         n15.setNext(fUp8);
         fUp8.setPrevious(n15);
 
         Node n14 = new Node();
-        n14.setText("Start applying oil , then go in for the back rub");
+        n14.setText("applies the oil , then goes in for the back rub.");
         n14.setRating("real good");
         n14.setStat("1Choice2Option3");
         n14.setNext(n16);
 
         Node n13 = new Node();
-        n13.setText("Start applying the oil");
+        n13.setText("applies the oil happily");
         n13.setRating("good");
         n13.setStat("1Choice2Option2");
         n13.setNext(n16);
 
         Node n12 = new Node();
-        n12.setText("Begrudgingly start applying sun tan lotion");
+        n12.setText("begrudgingly starts applying sun tan lotion.");
         n12.setRating("bad");
         n12.setStat("1Choice2Option1");
         n12.setNext(n15);
 
         Node n11 = new Node();
-        n11.setText("'I'm trying to tan the natural way, really get a feel for how the humans do it. They might not be good for much, but they sure do know how to make a fine tanning oil.'");
+        n11.setText("'I'm trying to tan the natural way, really get a feel for how the humans do it. They might not be as perfect as me, but they sure know how to make a fine tanning oil.'. Chtulhu...");
         n11.setOption1(n12);
         n11.setOption2(n13);
         n11.setOption3(n14);
 
         Node fUp7 = new Node();
-        fUp7.setText("Cthulhu smirked and said, 'Nice party trick. Where did you send them to?'. Nyarlathotep, giddy with excitement, tells Cthulhu, 'You'll find out soon, sweetie. In the meantime, why don't you help me rub some lotion on my back.'");
+        fUp7.setText("Cthulhu smirked and said, 'Nice party trick, where did you send them to?'. Nyarlathotep, giddy with excitement, tells Cthulhu, 'It's a secret, hehe. Now that we're alone, why don't you help me rub some lotion on my back.'.");
         fUp7.setNext(n11);
         n11.setPrevious(fUp7);
 
         Node fUp6 = new Node();
-        fUp6.setText("Suddenly, every frozen paparazzi began sinking into the sand, leaving only three things left on the beach: Cthulhu, Nyarlathotep and a beach towel for two.");
+        fUp6.setText("Suddenly, every frozen monster began sinking into the sand, leaving only three things left on the beach: Cthulhu, Nyarlathotep, and a beach towel for two.");
         fUp6.setNext(fUp7);
         fUp7.setPrevious(fUp6);
 
@@ -466,74 +466,74 @@ public class GameManager : MonoBehaviour
         fUp6.setPrevious(n10);
 
         Node fUp5 = new Node();
-        fUp5.setText("Nyarlathotep shakes his head, reluctantly holding down a chuckle saying, 'Cthulhu, The Great Old One, can’t handle a small crowd. You sure know how to make me laugh, old pal.'");
+        fUp5.setText("Nyarlathotep shook his head, holding down a chuckle saying, 'Cthulhu, the Great Old One, can’t handle a small crowd? You sure know how to make me laugh!'.");
         fUp5.setNext(n10);
         n10.setPrevious(fUp5);
 
         Node n9 = new Node();
-        n9.setText("After greeting Cthulhu, Nyarlathotep asked with a smile, 'Why are you so nervous, haven’t you ever been to a photo shoot?'. Cthulhu looked at him, groaning as he said, 'You know I hate crowds'.");
+        n9.setText("After greeting Cthulhu, Nyarlathotep asked with a smile, 'Why are you nervous, haven’t you been photographed before?'. Cthulhu looked at him, groaning as he said, 'You know I hate crowds!'.");
         n9.setNext(fUp5);
         fUp5.setPrevious(n9);
 
         Node n8 = new Node();
-        n8.setText("'I’ve worked very hard to get all 4 of my Instagram’s to the top of the charts? Oh wait, all you do is sleep all year, so what would you know…'");
+        n8.setText("'Hey, I worked hard to get millions of followers on my Instagram’s, all four of them! Oh wait, all you do is sleep, so what would you know!'");
         n8.setNext(n9);
 
         Node n7 = new Node();
-        n7.setText("'As I like to say: nothing's worth doing if you're not doing it big.'");
+        n7.setText("'Nothing's worth doing if you don't do it big!', Nyarlathotep said flamboyantly.");
         n7.setNext(n9);
 
         Node n6 = new Node();
-        n6.setText("'Nyarl, buddy, you sure know how to throw a party!'");
+        n6.setText("Nyarl, you sure know how to throw a party!");
         n6.setRating("good");
         n6.setStat("1Choice1Option3");
         n6.setNext(n7);
 
         Node n5 = new Node();
-        n5.setText("'Why is it always crowds with you, we never get to talk one on one?'");
+        n5.setText("Why is it always crowds with you? We never get to talk one on one!");
         n5.setRating("bad");
         n5.setStat("1Choice1Option2");
         n5.setNext(n8);
 
         Node n4 = new Node();
-        n4.setText("'Hey Nyarl, glad to see your still creating crowds wherever you go.'");
+        n4.setText("Hey Nyarl, glad to see your still creating crowds wherever you go.");
         n4.setRating("real good");
         n4.setStat("1Choice1Option1");
         n4.setNext(n7);
 
         Node n3 = new Node();
-        n3.setText("Cthulhu recognized this man as Nyarlathotep, The Crawling Chaos, a shape shifter with a pension towards narcissism. As Cthulhu walked up to greet him he said");
+        n3.setText("Cthulhu recognized this man as Nyarlathotep, the Crawling Chaos, a shape shifter with a penchant towards narcissism. As Cthulhu walked up to greet him, he said...");
         n3.setOption1(n4);
         n3.setOption2(n5);
         n3.setOption3(n6);
 
         Node fUp4 = new Node();
-        fUp4.setText("Standing in the center of this massive circle of monsters was an impossibly handsome man whose appearance seemed to get more beautiful the longer he stared at him.");
+        fUp4.setText("Standing in the center of this massive circle of monsters was an impossibly handsome man, whose appearance seemed to get more beautiful the longer Cthulhu stared.");
         fUp4.setNext(n3);
         n3.setPrevious(fUp4);
 
         Node fUp3 = new Node();
-        fUp3.setText("Fed up from getting the same answer, Cthulhu forced his way into the center of the circle. It is at this point that Cthulhu found the source of the photographers’ obsession.");
+        fUp3.setText("Fed up from getting the same answer, Cthulhu forced his way into the center of the circle. Upon entering, his thoughts went blank.");
         fUp3.setNext(fUp4);
         fUp4.setPrevious(fUp3);
 
         Node fUp2 = new Node();
-        fUp2.setText("Cthulhu, confused by the scene, asked one of the photographers what was happening, only for them to reply, ‘He’s gorgeous.’. Perplexed by this answer, he ask another photographer, then another, then another.");
+        fUp2.setText("Cthulhu, confused by the scene, asked one of the photographers what was happening, only for them to reply, ‘He’s gorgeous!’. Perplexed by the answer, he asked another photographer, then another, then another.");
         fUp2.setNext(fUp3);
         fUp3.setPrevious(fUp2);
 
         Node n2 = new Node();
-        n2.setText("As he reached the shore, Cthulhu noticed something off about the people there. Each and every monster was huddled in a circle, surrounding one person as they tried taking pictures of them.");
+        n2.setText("As he reached the shore, Cthulhu noticed something off about the people there. They were all monsters! Each of them was huddled in a circle, taking photos of something in the middle.");
         n2.setNext(fUp2);
         fUp2.setPrevious(n2);
 
         Node fUp1 = new Node();
-        fUp1.setText("Cthulhu had always hated the beach, too much sand and too many people. However, not even he would not miss an invitation to spend time with Nyarlathotep.");
+        fUp1.setText("Cthulhu had always hated the beach, there's too much sand and it's always crowded. However, not even HE would miss an invitation to spend time with Nyarlathotep.");
         fUp1.setNext(n2);
         n2.setPrevious(fUp1);
 
         Node n1 = new Node();
-        n1.setText("Cthulhu feels sand at his feet as he rises from the ocean to a luxurious beach filled to the brim with people. As he gets closer to the shoreline, he notices a sign with the words ‘Penumbra beach’ etched into the small wooden post.");
+        n1.setText("Cthulhu felt sand between his tentacles as he rose from the ocean. 'Ug... the beach...', he said with a frown, reading the sign in front of him that said ‘Penumbra beach’.");
         n1.setNext(fUp1);
         fUp1.setPrevious(n1);
 
@@ -545,55 +545,50 @@ public class GameManager : MonoBehaviour
     // Create day 1 part 3 tree
     public void createPart3Tree()
     {
-        Node fUp12 = new Node();
-        fUp12.setText("He was almost startled by the sound of a building being crushed under his foot. “Wow”, he thought, “What a mess.”");
-
         Node n73 = new Node();
-        n73.setText("Shub-Niggurath began ascending to space. Cthulhu waved her goodbye and began walking towards the ocean.");
-        n73.setNext(fUp12);
-        fUp12.setPrevious(n73);
+        n73.setText("Shub-Niggurath began ascending to space. Cthulhu waved her goodbye and started walking towards the ocean. He was almost startled by the sound of a building being crushed under his foot. 'Wow', he thought, 'What a mess...'");
 
         Node n72 = new Node();
-        n72.setText("“Perhaps.”, she said with a wink.");
+        n72.setText("'Maybe...if you're lucky', she said winking at him as she turned around.");
         n72.setNext(n73);
         n73.setPrevious(n72);
 
         Node n71 = new Node();
-        n71.setText("“Well, maybe next time I can invite you over.”, he said grinning back.");
+        n71.setText("'Well, maybe next time I can invite YOU over.', he said grinning back.");
         n71.setNext(n72);
         n72.setPrevious(n71);
 
         Node n70 = new Node();
-        n70.setText("“I am”, she looked at him grinning. “I would love to invite you over, but I don’t think you are capable of following me.”");
+        n70.setText("'I am', she looked at him grinning. 'I would love to invite you over, but I don’t think you're even capable of following me.'");
         n70.setNext(n71);
         n71.setPrevious(n70);
 
         Node n69 = new Node();
-        n69.setText("“Going home now?”, he inquired.");
+        n69.setText("'Going home now?', he inquired, hoping she wouldn't leave right away.");
         n69.setNext(n70);
         n70.setPrevious(n69);
 
         Node n68 = new Node();
-        n68.setText("“It usually is”, she replied. A tentacle protruded from her side and grabbed the projector, bringing it inside her tendrils.");
+        n68.setText("'It always is', she replied. A tentacle protruded from her side and grabbed the projector, bringing it inside her tendrils.");
         n68.setNext(n69);
         n69.setPrevious(n68);
 
         Node n67 = new Node();
-        n67.setText("“Shub, it was great seeing you”, Cthulhu said, smiling.");
+        n67.setText("'Shub, it was great seeing you', Cthulhu said, smiling.");
         n67.setNext(n68);
         n68.setPrevious(n67);
 
         Node n66 = new Node();
-        n66.setText("Both creatures got up");
+        n66.setText("Both creatures got up, realizing it was about time for them to get going.");
         n66.setNext(n67);
 
         Node n65 = new Node();
-        n65.setText("“Yup. That it was.”, Shub replied dryly.");
+        n65.setText("'Noooo, I liked the movie. You're such a grumpy monster sometimes!'");
         n65.setNext(n66);
         n66.setPrevious(n65);
 
         Node n64 = new Node();
-        n64.setText("“Well”, Cthulhu began, “That was certainly something.”");
+        n64.setText("'Well', Cthulhu began, 'That was certainly something.'. 'Maybe we should have watched another movie?'");
         n64.setNext(n65);
         n65.setPrevious(n64);
 
@@ -603,142 +598,142 @@ public class GameManager : MonoBehaviour
         n64.setPrevious(n63);
 
         Node n62 = new Node();
-        n62.setText("“Sure, whatever you want.”");
+        n62.setText("'Sure, whatever you want. Just don't talking during it or you'll miss what happens.'");
         n62.setNext(n63);
         n63.setPrevious(n62);
 
         Node n61 = new Node();
-        n61.setText("“Yeah, but you kept saying it would get better, so I might as well keep watching, right?”");
+        n61.setText("'Yeah, but you kept saying it would get better, so I might as well keep watching, right?'");
         n61.setNext(n62);
         n62.setPrevious(n61);
 
         Node n60 = new Node();
-        n60.setText("“I thought you were hating it.”");
+        n60.setText("'I thought you were hating it.', she said, poking fun at him and his actions.");
         n60.setNext(n61);
         n61.setPrevious(n60);
 
         Node n59 = new Node();
-        n59.setText("“I’m not shy, I just wanna keep watching the movie”, his lie was almost convincing.");
+        n59.setText("'I’m not shy, I just wanna keep watching the movie', his lie was almost convincing.");
         n59.setNext(n60);
         n60.setPrevious(n59);
 
         Node n58 = new Node();
-        n58.setText("“Wow. Who knew you’d be so shy.”");
+        n58.setText("'Wow, who knew you’d be so shy! I didn't take you for that sort of monster.'");
         n58.setNext(n59);
         n59.setPrevious(n58);
 
         Node n57 = new Node();
-        n57.setText("Shub smiled, surprised by his actions.");
+        n57.setText("Shub smiled, surprised by his actions. She gave him a playful poke to the side.");
         n57.setNext(n58);
         n58.setPrevious(n57);
 
         Node n56 = new Node();
-        n56.setText("She smiled. “I would love to.”");
+        n56.setText("She smiled. 'I would love to. But next time, you bring the movie'");
         n56.setNext(n67);
 
         Node n55 = new Node();
-        n55.setText("“So did I. Wanna do this again some other day?”");
+        n55.setText("'So did I. Wanna do this again some other day?', he said, hoping that she would say yes.");
         n55.setNext(n56);
         n56.setPrevious(n55);
 
         Node n54 = new Node();
-        n54.setText("“Cthulhu, I had a great time tonight.”");
+        n54.setText("'Cthulhu, I had a great time tonight. It was really nice seeing you again after such a long time.'");
         n54.setNext(n55);
         n55.setPrevious(n54);
 
         Node n53 = new Node();
-        n53.setText("They stayed like that for a while, up until the credits stopped rolling. Eventually, she got up, and so did he. Staring at his eyes, she said:");
+        n53.setText("They stayed like that for a while, up until the credits stopped rolling. Eventually, she got up, and so did he. Staring into his eyes, she said,");
         n53.setNext(n54);
         n54.setPrevious(n53);
 
         Node n52 = new Node();
-        n52.setText("Cthulhu leaned back, pulling her closer. The mass of tentacles now leaned on his arm and chest. Cthulhu began slowly caressing her - uhhhh - back? It was hard to tell.");
+        n52.setText("Cthulhu leaned back, pulling her closer. The mass of tentacles now leaned on his arm and chest. Cthulhu began slowly caressing her...uh...back? It was hard to tell.");
         n52.setNext(n53);
         n53.setPrevious(n52);
 
         Node n51 = new Node();
-        n51.setText("Shub giggled. “No, but I’m happy you have now.”");
+        n51.setText("Shub giggled. 'No, but I’m happy you said it now.'");
         n51.setNext(n52);
         n52.setPrevious(n51);
 
         Node n50 = new Node();
-        n50.setText("“Have I ever told you that you have the most beautiful tentacles I have ever seen?”");
+        n50.setText("'Have I ever told you that you have the most beautiful tentacles I've ever seen?'");
         n50.setNext(n51);
         n51.setPrevious(n50);
 
         Node n49 = new Node();
-        n49.setText("“Yeah, you are.”");
+        n49.setText("'Yeah, you are.' You're also good at kissing', he said, watching Shub smile afterwards.");
         n49.setNext(n67);
 
         Node n48 = new Node();
-        n48.setText("“I’m good at doing that.”");
+        n48.setText("'I’m good at doing that.', she remarked, while giving him a playful poke.");
         n48.setNext(n49);
         n49.setPrevious(n48);
 
         Node n47 = new Node();
-        n47.setText("“I wasn’t at first, but you really changed my mind.”, he smiles.");
+        n47.setText("'I didn't at first, but you really changed my mind.', he smiled.");
         n47.setNext(n48);
         n48.setPrevious(n47);
 
         Node n46 = new Node();
-        n46.setText("“So, did you like the movie?”, she whispers while staring at Cthulhu’s eyes.");
+        n46.setText("'So, did you like the movie?', she whispered, while staring into Cthulhu’s eyes.");
         n46.setNext(n47);
         n47.setPrevious(n46);
 
         Node fUp11 = new Node();
-        fUp11.setText("After a while, the credits begin rolling, and they let go of each other.");
+        fUp11.setText("After a while, the credits began rolling, and they let go of each other.");
         fUp11.setNext(n46);
         n46.setPrevious(fUp11);
 
         Node fUp10 = new Node();
-        fUp10.setText("The sight and sounds of the two sets of tentacles rubbing and twisting around each other is enough to break the minds of all surviving humans in an 8 mile radius.");
+        fUp10.setText("The sight and sounds of the two sets of tentacles rubbing and twisting around each other as they kissed was enough to break the minds of all surviving humans in an 8 mile radius.");
         fUp10.setNext(fUp11);
         fUp11.setPrevious(fUp10);
 
         Node n45 = new Node();
-        n45.setText("Before he can barely approach Shub’s face, her tentacles are already wrapping around his.");
+        n45.setText("Before making contact with Shub's face, her tentacles wrapped tightly around his.");
         n45.setNext(fUp10);
         fUp10.setPrevious(n45);
 
         Node n44 = new Node();
-        n44.setText("Shyly look back at the screen.");
+        n44.setText("shyly looked back at the screen.");
         n44.setRating("bad");
         n44.setStat("2Choice3Option3");
         n44.setNext(n57);
         n57.setPrevious(n44);
 
         Node n43 = new Node();
-        n43.setText("Give her a compliment.");
+        n43.setText("gave her a compliment.");
         n43.setRating("good");
         n43.setStat("2Choice3Option2");
         n43.setNext(n50);
         n50.setPrevious(n43);
 
         Node n42 = new Node();
-        n42.setText("Go in for the kiss.");
+        n42.setText("went in for a kiss.");
         n42.setRating("real good");
         n42.setStat("2Choice3Option1");
         n42.setNext(n45);
         n45.setPrevious(n42);
 
         Node n41 = new Node();
-        n41.setText("They locked (dozens of) eyes for a moment.");
+        n41.setText("No...maybe...yes...Cthulhu looks down shyly, then looks back up at her. They locked (dozens of) eyes for a moment. Cthulhu...");
         n41.setOption1(n42);
         n41.setOption2(n43);
         n41.setOption3(n44);
 
         Node n40 = new Node();
-        n40.setText("Shub snorted as she laughed. “That’s sad.”");
+        n40.setText("Shub snorted as she laughed. 'That’s sad. I bet you practiced kissing a pillow too, huh?', she said smirking at him.");
         n40.setNext(n41);
         n41.setPrevious(n40);
 
         Node n39 = new Node();
-        n39.setText("“I know. I’ve practiced this move to perfection in front of my mirror.”");
+        n39.setText("'I know. I’ve practiced this move to perfection in front of my mirror.'");
         n39.setNext(n40);
         n40.setPrevious(n39);
 
         Node n38 = new Node();
-        n38.setText("“Smooth”, she said sarcastically.");
+        n38.setText("'Smooth', she said sarcastically. She cuddled in to him, embracing his advances.");
         n38.setNext(n39);
         n39.setPrevious(n38);
 
@@ -748,22 +743,22 @@ public class GameManager : MonoBehaviour
         n38.setPrevious(n37);
 
         Node n36 = new Node();
-        n36.setText("“Hey”, she said in a hushed tone. “It’s just a movie. Don’t be an ass.”");
+        n36.setText("'Hey', she said in a hushed tone. 'It’s just a movie. Don’t be an ass.'");
         n36.setNext(n37);
         n37.setPrevious(n36);
 
         Node n35 = new Node();
-        n35.setText("“Like, she could easily just destroy all the humans and ignore Godzilla completely!”");
+        n35.setText("'She could easily just destroy all the humans and ignore Godzilla completely! There's no point!");
         n35.setNext(n36);
         n36.setPrevious(n35);
 
         Node n34 = new Node();
-        n34.setText("“Shhh. Just let it happen.” Shub didn’t look away from the screen.");
+        n34.setText("'Shhh. Just let it happen.' Shub didn’t look away from the screen.");
         n34.setNext(n35);
         n35.setPrevious(n34);
 
         Node n33 = new Node();
-        n33.setText("“Why does the moth side with the humans? That seems counter intuitive.”, Cthulhu commented.");
+        n33.setText("'Why does the moth side with the humans? That seems counter-intuitive.', Cthulhu commented.");
         n33.setNext(n34);
         n34.setPrevious(n33);
 
@@ -773,22 +768,22 @@ public class GameManager : MonoBehaviour
         n33.setPrevious(n32);
 
         Node n31 = new Node();
-        n31.setText("“We’ll see.”, he said groaning.");
+        n31.setText("'We’ll see.', he said groaning. He didn't want to watch a movie with humans in it, but he would try for her.");
         n31.setNext(n32);
         n32.setPrevious(n31);
 
         Node n30 = new Node();
-        n30.setText("“It is! I promise it gets better.” She grabbed Cthulhu’s arm.");
+        n30.setText("'It is! I promise it gets better.' She grabbed Cthulhu’s arm.");
         n30.setNext(n31);
         n31.setPrevious(n30);
 
         Node n29 = new Node();
-        n29.setText("“I thought this was about Godzilla”, he told Shub, who was now sitting beside him.");
+        n29.setText("'I thought this was about Godzilla', he told Shub, who was now sitting beside him.");
         n29.setNext(n30);
         n30.setPrevious(n29);
 
         Node fUp9 = new Node();
-        fUp9.setText("Soon, the words “Mothra vs. Godzilla” appeared, and the movie started. Immediately, humans showed up on screen and Cthulhu lost all interest.");
+        fUp9.setText("Soon, the words 'Mothra vs. Godzilla' appeared, and the movie started. Immediately, humans showed up on screen and Cthulhu lost all interest.");
         fUp9.setNext(n29);
         n29.setPrevious(fUp9);
 
@@ -798,76 +793,76 @@ public class GameManager : MonoBehaviour
         fUp9.setPrevious(n28);
 
         Node n27 = new Node();
-        n27.setText("Shub gave him a playful smile. “Oh, is that so?”, she giggled again. “Well then, what if we watch this one?”");
+        n27.setText("Shub gave him a playful smile. 'Oh, is that so?', she giggled again. 'Well then, what if we watch this one?'");
         n27.setNext(n28);
 
         Node n26 = new Node();
-        n26.setText("“What? Not a fan? Well too bad.”, somehow, she made a mocking face. “My projector, my movie. Here, let’s watch this one. I bet you'll like it.”");
+        n26.setText("'What? Not a fan? Well too bad.', she made a mocking face. 'My projector, my movie. Here, let’s watch this one. I bet you'll like it.'");
         n26.setNext(n28);
 
         Node fUp8 = new Node();
-        fUp8.setText("She kept going for a while after that. Eventually, she interrupted herself. “Oh, sorry! Sometimes I get too excited to talk about these movies! Let’s just watch this one.”");
+        fUp8.setText("She kept going for a while after that. Eventually, she interrupted herself. 'Oh, sorry! Sometimes I get too excited talking about these movies! Let’s just watch this one.'");
         fUp8.setNext(n28);
 
         Node n25 = new Node();
-        n25.setText("Shub’s eyes widened. “Oh, that’s a great question! I think it's between Son of Godzilla and Mothra vs. Godzilla, right? Mothra and Godzilla definitely have a lot of chemistry together, although some could argue…”");
+        n25.setText("Shub’s eyes widened. 'Oh, that’s a great question! I think it's between Son of Godzilla and Mothra vs. Godzilla, right? Mothra and Godzilla definitely have a lot of chemistry together, although some could argue…'");
         n25.setNext(n28);
         fUp8.setPrevious(n25);
 
         Node n24 = new Node();
-        n24.setText("“Pick whichever you prefer. I don’t plan on looking at the screen for too long.”");
+        n24.setText("'Pick whichever you prefer. I don’t plan on looking at the screen for too long, hehe.'");
         n24.setRating("real good");
         n24.setStat("2Choice2Option3");
         n24.setNext(n27);
         n27.setPrevious(n24);
 
         Node n23 = new Node();
-        n23.setText("“Ok, but what if we watched literally anything else?”");
+        n23.setText("'Ok, but what if we watched literally anything else?'");
         n23.setRating("bad");
         n23.setStat("2Choice2Option2");
         n23.setNext(n26);
         n26.setPrevious(n23);
 
         Node n22 = new Node();
-        n22.setText("“I don’t know. Which one of these do you think is the most romantic?”");
+        n22.setText("'I don’t know. Which one of these do you think is the most romantic?'");
         n22.setRating("good");
         n22.setStat("2Choice2Option1");
         n22.setNext(n25);
         n25.setPrevious(n22);
 
         Node n21 = new Node();
-        n21.setText("The mass of tentacles produced a giggle. “Make your decision.”");
+        n21.setText("The mass of tentacles produced a giggle. 'Make your decision.'. Cthulhu thinks for a little, then for a while. He finally says...");
         n21.setOption1(n22);
         n21.setOption2(n23);
         n21.setOption3(n24);
 
         Node n20 = new Node();
-        n20.setText("Cthulhu’s eyes widened. “Did you make some of these up?”");
+        n20.setText("'And that's it', she said. Cthulhu’s eyes widened. 'Did you make some of these up? That list was insanely long!'");
         n20.setNext(n21);
         n21.setPrevious(n20);
 
         Node fUp7 = new Node();
-        fUp7.setText("‘Godzilla: Tokyo S.O.S’, ‘Godzilla: Final Wars’, and ‘Shin Godzilla’.”");
+        fUp7.setText("Godzilla: Tokyo S.O.S., Godzilla: Final Wars, Shin Godzilla...");
         fUp7.setNext(n20);
         n20.setPrevious(fUp7);
 
         Node fUp6 = new Node();
-        fUp6.setText("‘Godzilla vs. Biollante’, ‘Godzilla vs. King Ghidorah’, ‘Godzilla vs Mechagodzilla 2’, ‘Godzilla vs. SpaceGodzilla’, ‘Godzilla vs. Destroyah’, ‘Godzilla 2000’, ‘Godzilla vs. Megaguirus’");
+        fUp6.setText("Godzilla vs. Biollante, Godzilla vs. King Ghidorah, Godzilla vs Mechagodzilla 2, Godzilla vs. Space Godzilla, Godzilla vs. Destroyah, Godzilla 2000, Godzilla vs. Megaguirus...");
         fUp6.setNext(fUp7);
         fUp7.setPrevious(fUp6);
 
         Node fUp5 = new Node();
-        fUp5.setText("‘Son of Godzilla’, ‘Godzilla vs. Hedorah’, ‘Godzilla vs. Gigan’, ‘Godzilla vs. Megalon’, ‘Godzilla vs. Mechagodzilla’, ‘Terror of Mechagodzilla’, ‘The Return of Godzilla’");
+        fUp5.setText("Son of Godzilla, Godzilla vs. Hedorah, Godzilla vs. Gigan, Godzilla vs. Megalon, Godzilla vs. Mechagodzilla, Terror of Mechagodzilla, The Return of Godzilla...");
         fUp5.setNext(fUp6);
         fUp6.setPrevious(fUp5);
 
         Node n19 = new Node();
-        n19.setText("“Believe or not, we have options” Shub said playfully. “I have OG ‘Godzilla’, ‘Godzilla Raids Again’, ‘King Kong vs. Godzilla, ‘Mothra vs. Godzilla’, ‘Invasion of Astro-Monster’");
+        n19.setText("'Believe it or not, we have options' Shub said playfully. 'I have OG Godzilla, Godzilla Raids Again, King Kong vs. Godzilla, Mothra vs. Godzilla, Invasion of Astro-Monster...");
         n19.setNext(fUp5);
         fUp5.setPrevious(n19);
 
         Node n18 = new Node();
-        n18.setText("“What are we watching?”, Cthulhu inquired.");
+        n18.setText("'What are we watching? I hope you didn't pick already.', Cthulhu inquired. He wondered if the movie would be romantic or not.");
         n18.setNext(n19);
         n19.setPrevious(n18);
 
@@ -877,7 +872,7 @@ public class GameManager : MonoBehaviour
         n18.setPrevious(n17);
 
         Node n16 = new Node();
-        n16.setText("“But you know what, this is fine too.”, he said, quickly correcting himself.");
+        n16.setText("'But you know what, this is fine too.', he said, quickly correcting himself.");
         n16.setNext(n17);
         n17.setPrevious(n16);
 
@@ -887,17 +882,17 @@ public class GameManager : MonoBehaviour
         n16.setPrevious(n15);
 
         Node n14 = new Node();
-        n14.setText("“You know, I thought we were going to watch a movie in an actual movie theater…”, Cthulhu said, smirking through his tentacles.");
+        n14.setText("'You know, I thought we were going to watch a movie in an actual movie theater.', Cthulhu said, smirking through his tentacles.");
         n14.setNext(n15);
         n15.setPrevious(n14);
 
         Node n13 = new Node();
-        n13.setText("Punching down, Cthulhu sank his hand into a nearby city block.With one movement, he raised a gigantic, flat wall of earth.Pieces of city rained down from the newly altered terrain.");
+        n13.setText("Punching down, Cthulhu sank his hand into a nearby city block. With one movement, he raised a gigantic, flat wall of earth. Pieces of the city rained down from the newly altered terrain.");
         n13.setNext(n14);
         n14.setPrevious(n13);
 
         Node n12 = new Node();
-        n12.setText("“Can you go lift a wall for us real quick?”, she said with a smile.");
+        n12.setText("'Hmm, we need a screen for the projector. Can you make one?', she said with a smile.");
         n12.setNext(n13);
         n13.setPrevious(n12);
 
@@ -907,51 +902,51 @@ public class GameManager : MonoBehaviour
         n12.setPrevious(n11);
 
         Node n10 = new Node();
-        n10.setText("“Oh stop being such a baby.” Shub said with a mocking tone. She began wriggling her tentacles around, searching for something within. “With what I got, we don’t need this stupid human theater.”");
+        n10.setText("'Oh stop being such a baby.', Shub said with a mocking tone. She began wriggling her tentacles around, searching for something within. 'With what I got, we don’t need this stupid human theater.'");
         n10.setNext(n11);
 
         Node n9 = new Node();
-        n9.setText("“Oh, there was a city here?” She looked around. “Don’t worry about it, cutie.” Somehow, she managed to wink with her tentacles. “I got something for us.”");
+        n9.setText("'Oh, there was a city here?' She looked around. 'Don’t worry about it, cutie.', she managed to wink with her tentacles, 'I got something for us.'.");
         n9.setNext(n11);
 
         Node n8 = new Node();
-        n8.setText("Massive tentacles moved up to her - ehm - other tentacles as she giggled. “Oh Cthulhu, you really know how to make a girl blush.” She began wriggling her body, looking for something hidden within. “Here, I got something for us.”");
+        n8.setText("Massive tentacles moved up to her...um...other tentacles as she giggled. 'Oh Cthulhu, you really know how to make a girl blush.' She began wriggling her body, looking for something hidden within. 'Here, I got something for us.'");
         n8.setNext(n11);
 
         Node n7 = new Node();
-        n7.setText("“Damnit, Shub. You’re not only late, but you managed to destroy the movie theater!”");
+        n7.setText("'Damnit, Shub. You’re not only late, but you managed to destroy the movie theater!'");
         n7.setRating("bad");
         n7.setStat("2Choice1Option3");
         n7.setNext(n10);
         n10.setPrevious(n7);
 
         Node n6 = new Node();
-        n6.setText("“You sure know how to make an entrance. We really didn’t have to destroy this city.”");
+        n6.setText("'You sure know how to make an entrance. We really didn’t have to destroy the city.'");
         n6.setRating("good");
         n6.setStat("2Choice1Option2");
         n6.setNext(n9);
         n9.setPrevious(n6);
 
         Node n5 = new Node();
-        n5.setText("“I would have waited a thousand years more if that’s what it took for a glimpse of you.”");
+        n5.setText("'I would have waited a thousand years more if that’s what it took for a glimpse of you.'");
         n5.setRating("real good");
         n5.setStat("2Choice1Option1");
         n5.setNext(n8);
         n8.setPrevious(n5);
 
         Node n4 = new Node();
-        n4.setText("The mass of tentacles sank from the sky slowly. After a few seconds, Shub was in front of him. “Sorry I’m late!” she said, smiling. The entire district around them had been flattened.");
+        n4.setText("The mass of tentacles sank from the sky slowly. After a few seconds, Shub was in front of him. 'Sorry I’m late!' she said, smiling. The entire district around them had been flattened. Cthulhu began by saying...");
         n4.setOption1(n5);
         n4.setOption2(n6);
         n4.setOption3(n7);
 
         Node fUp4 = new Node();
-        fUp4.setText("With a sigh, Cthulhu began growing back to his original size. His outfit exploded. The ground around him did the same. Soon, he towered above the entire city, his mere presence knocking down entire buildings.");
+        fUp4.setText("With a sigh, Cthulhu began growing back to his original size. The ground around him exploded. Soon, he towered above the entire city, his mere presence knocking down entire buildings.");
         fUp4.setNext(n4);
         n4.setPrevious(fUp4);
 
         Node n3 = new Node();
-        n3.setText("From the sky, a massive blob of tentacles penetrated the atmosphere, becoming engulfed in a ball of fire. Earthquakes shattered the asphalt around him, while people’s skin melted off their faces around him.");
+        n3.setText("From the sky, a massive blob of tentacles penetrated the atmosphere, becoming engulfed in a ball of fire. Earthquakes shattered the asphalt around him, while people’s skin melted off their faces.");
         n3.setNext(fUp4);
         fUp4.setPrevious(n3);
 
@@ -961,22 +956,22 @@ public class GameManager : MonoBehaviour
         n3.setPrevious(fUp3);
 
         Node fUp2 = new Node();
-        fUp2.setText("Humans losing their minds upon witnessing something incomprehensibly frightening. Cthulhu quickly checked his outfit to see if he was the cause of this. His outfit was impeccable.");
+        fUp2.setText("The mob was screaming and shaking, losing their minds as if they had witnessed something incomprehensibly frightening. Cthulhu quickly checked his outfit to see if he was the cause of this. His outfit was impeccable.");
         fUp2.setNext(fUp3);
         fUp3.setPrevious(fUp2);
 
         Node n2 = new Node();
-        n2.setText("A ‘very hard’ game of minesweeper on his phone was interrupted by screams. Cthulhu looked around to see what the cause of the commotion was. He was surrounded by a scene he had seen many times.");
+        n2.setText("A ‘very hard’ game of minesweeper on his phone was interrupted by screams. Cthulhu looked around to see what the cause of the commotion was. He was surrounded by a mob of humans.");
         n2.setNext(fUp2);
         fUp2.setPrevious(n2);
 
         Node fUp1 = new Node();
-        fUp1.setText("“I can’t really expect anything else from her”, he thought, quickly hiding his monstrous features back in his outfit. He sat on a nearby bench to wait.");
+        fUp1.setText("'I knew she'd be late, she's always late!', he thought, breaking a nearby bench as he sat and waited for her to arrive.");
         fUp1.setNext(n2);
         n2.setPrevious(fUp1);
 
         Node n1 = new Node();
-        n1.setText("Cthulhu looked down at his phone. “8:00 pm at the Honeyview Movie Theater xoxoxo”. It was 8:15. His tentacles flailed out as he sighed in exasperation.");
+        n1.setText("Cthulhu looked down at his phone. '8:00 pm at the Honeyview Movie Theater xoxoxo'. It was 8:15. His tentacles flailed out as he sighed in exasperation.");
         n1.setNext(fUp1);
         fUp1.setPrevious(n1);
 
@@ -996,17 +991,17 @@ public class GameManager : MonoBehaviour
         n9.setPrevious(n8);
 
         Node n7 = new Node();
-        n7.setText("I'm the best choice!");
+        n7.setText("I'm the best choice");
         n7.setRating("good");
         n7.setNext(n8);
 
         Node n6 = new Node();
-        n6.setText("No Pick me!");
+        n6.setText("No, pick me");
         n6.setRating("good");
         n6.setNext(n8);
 
         Node n5 = new Node();
-        n5.setText("Pick me!");
+        n5.setText("Pick me");
         n5.setRating("good");
         n5.setNext(n8);
 

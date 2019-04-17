@@ -9,6 +9,7 @@ public class Node
     string currentText;
     string choiceRating;
     string statName;
+    AudioClip soundEffect;
     Node previous;
     Node next;
     Node option1;
@@ -85,5 +86,13 @@ public class Node
     public void setStat(string s)
     {
         statName = s;
+    }
+    public AudioClip getSoundEffect()
+    {
+        return soundEffect;
+    }
+    public void setSoundEffect(AudioClip s)
+    {
+        soundEffect = s;
     }
 }
