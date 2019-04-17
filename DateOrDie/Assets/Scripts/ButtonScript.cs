@@ -12,7 +12,7 @@ public class ButtonScript : MonoBehaviour
         // Update stats based on option
         PlayerPrefs.SetInt(current.getOption1().getStat(), 1);
         // play sound effect if there is one
-        if (current.getOption1().getSoundEffect() != null) gameObject.GetComponent<AudioSource>().PlayOneShot(current.getOption1().getSoundEffect());
+        if (current.getOption1().getSoundEffect() != null) GameObject.Find("GameManager").GetComponent<AudioSource>().PlayOneShot(current.getOption1().getSoundEffect());
         // Increment or decrement affection bar (will be changed probably)
         if (current.getOption1().getRating() == "good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.2f);
         else if (current.getOption1().getRating() == "real good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.33f);
@@ -29,7 +29,7 @@ public class ButtonScript : MonoBehaviour
         // Update stats based on option
         PlayerPrefs.SetInt(current.getOption2().getStat(), 1);
         // play sound effect if there is one
-        if (current.getOption2().getSoundEffect() != null) gameObject.GetComponent<AudioSource>().PlayOneShot(current.getOption2().getSoundEffect());
+        if (current.getOption2().getSoundEffect() != null) GameObject.Find("GameManager").GetComponent<AudioSource>().PlayOneShot(current.getOption2().getSoundEffect());
         // Increment or decrement affection bar (will be changed probably)
         if (current.getOption2().getRating() == "good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.2f);
         else if (current.getOption2().getRating() == "real good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.33f);
@@ -46,7 +46,7 @@ public class ButtonScript : MonoBehaviour
         // Update stats based on option
         PlayerPrefs.SetInt(current.getOption3().getStat(), 1);
         // play sound effect if there is one
-        if (current.getOption3().getSoundEffect() != null) gameObject.GetComponent<AudioSource>().PlayOneShot(current.getOption3().getSoundEffect());
+        if (current.getOption3().getSoundEffect() != null) GameObject.Find("GameManager").GetComponent<AudioSource>().PlayOneShot(current.getOption3().getSoundEffect());
         // Increment or decrement affection bar (will be changed probably)
         if (current.getOption3().getRating() == "good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.2f);
         else if (current.getOption3().getRating() == "real good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.33f);
