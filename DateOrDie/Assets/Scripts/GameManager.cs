@@ -199,7 +199,7 @@ public class GameManager : MonoBehaviour
         n18.setNext(n20);
 
         Node n17 = new Node();
-        n17.setText("swallows what he has and sets the cup down.");
+        n17.setText("swallows and sets the cup down.");
         n17.setRating("real good");
         n17.setStat("Choice3Option2");
         n17.setNext(n20);

@@ -126,6 +126,12 @@ public class ButtonScript : MonoBehaviour
         Application.Quit();
     }
 
+    // Credits
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     // Main Menu
     public void MainMenu()
     {
