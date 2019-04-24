@@ -392,12 +392,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Music from https://www.purple-planet.com/
-
-    Sound from https://freesound.org/
-
-
-'
+  m_Text: "Music & sound from https://www.purple-planet.com/\nhttps://freesound.org/people/GameAudio/sounds/220173/\r\nhttps://freesound.org/people/GabrielAraujo/sounds/242503/\r\n\n\n"
 --- !u!222 &1050509067
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -606,6 +601,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09c5c60285d5c2438dd16d95c32ebd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s_Good: {fileID: 0}
+  s_Bad: {fileID: 0}
 --- !u!114 &1522683116
 MonoBehaviour:
   m_ObjectHideFlags: 0
