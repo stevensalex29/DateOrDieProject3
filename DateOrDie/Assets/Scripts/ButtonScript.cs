@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
+    public AudioClip s_Good;
+    public AudioClip s_Bad;
     // Choose option1
     public void Option1()
     {
@@ -14,9 +16,21 @@ public class ButtonScript : MonoBehaviour
         // play sound effect if there is one
         if (current.getOption1().getSoundEffect() != null) GameObject.Find("GameManager").GetComponent<AudioSource>().PlayOneShot(current.getOption1().getSoundEffect());
         // Increment or decrement affection bar (will be changed probably)
-        if (current.getOption1().getRating() == "good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.2f);
-        else if (current.getOption1().getRating() == "real good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.33f);
-        else GameObject.Find("GameManager").GetComponent<GameManager>().decrementAffectionBar();
+        if (current.getOption1().getRating() == "good")
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.2f);
+            GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
+        }
+        else if (current.getOption1().getRating() == "real good")
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.33f);
+            GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
+        }
+        else
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().decrementAffectionBar();
+            GetComponent<AudioSource>().PlayOneShot(s_Bad, 1.0f);
+        }
         // Update new current node and no longer show options
         GameObject.Find("GameManager").GetComponent<GameManager>().setCurrentNode(current.getOption1().getNext());
         GameObject.Find("GameManager").GetComponent<GameManager>().disableOptionButtons();
@@ -31,9 +45,21 @@ public class ButtonScript : MonoBehaviour
         // play sound effect if there is one
         if (current.getOption2().getSoundEffect() != null) GameObject.Find("GameManager").GetComponent<AudioSource>().PlayOneShot(current.getOption2().getSoundEffect());
         // Increment or decrement affection bar (will be changed probably)
-        if (current.getOption2().getRating() == "good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.2f);
-        else if (current.getOption2().getRating() == "real good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.33f);
-        else GameObject.Find("GameManager").GetComponent<GameManager>().decrementAffectionBar();
+        if (current.getOption2().getRating() == "good")
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.2f);
+            GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
+        }
+        else if (current.getOption2().getRating() == "real good")
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.33f);
+            GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
+        }
+        else
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().decrementAffectionBar();
+            GetComponent<AudioSource>().PlayOneShot(s_Bad, 1.0f);
+        }
         // Update new current node and no longer show options
         GameObject.Find("GameManager").GetComponent<GameManager>().setCurrentNode(current.getOption2().getNext());
         GameObject.Find("GameManager").GetComponent<GameManager>().disableOptionButtons();
@@ -48,9 +74,21 @@ public class ButtonScript : MonoBehaviour
         // play sound effect if there is one
         if (current.getOption3().getSoundEffect() != null) GameObject.Find("GameManager").GetComponent<AudioSource>().PlayOneShot(current.getOption3().getSoundEffect());
         // Increment or decrement affection bar (will be changed probably)
-        if (current.getOption3().getRating() == "good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.2f);
-        else if (current.getOption3().getRating() == "real good") GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.33f);
-        else GameObject.Find("GameManager").GetComponent<GameManager>().decrementAffectionBar();
+        if (current.getOption3().getRating() == "good")
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.2f);
+            GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
+        }
+        else if (current.getOption3().getRating() == "real good")
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.33f);
+            GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
+        }
+        else
+        {
+            GameObject.Find("GameManager").GetComponent<GameManager>().decrementAffectionBar();
+            GetComponent<AudioSource>().PlayOneShot(s_Bad, 1.0f);
+        }
         // Update new current node and no longer show options
         GameObject.Find("GameManager").GetComponent<GameManager>().setCurrentNode(current.getOption3().getNext());
         GameObject.Find("GameManager").GetComponent<GameManager>().disableOptionButtons();
