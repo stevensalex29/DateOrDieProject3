@@ -164,6 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09c5c60285d5c2438dd16d95c32ebd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s_Good: {fileID: 0}
+  s_Bad: {fileID: 0}
 --- !u!114 &14276986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,6 +534,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09c5c60285d5c2438dd16d95c32ebd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s_Good: {fileID: 8300000, guid: 025d926949664874da39111bde77b2c2, type: 3}
+  s_Bad: {fileID: 8300000, guid: e6aae06ded06fed4c933bf254b7a0847, type: 3}
 --- !u!114 &251087807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -822,6 +826,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09c5c60285d5c2438dd16d95c32ebd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s_Good: {fileID: 0}
+  s_Bad: {fileID: 0}
 --- !u!114 &454351697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,6 +1049,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09c5c60285d5c2438dd16d95c32ebd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s_Good: {fileID: 0}
+  s_Bad: {fileID: 0}
 --- !u!114 &575125725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2222,6 +2230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09c5c60285d5c2438dd16d95c32ebd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s_Good: {fileID: 8300000, guid: 025d926949664874da39111bde77b2c2, type: 3}
+  s_Bad: {fileID: 8300000, guid: e6aae06ded06fed4c933bf254b7a0847, type: 3}
 --- !u!114 &1214418118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2652,6 +2662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09c5c60285d5c2438dd16d95c32ebd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s_Good: {fileID: 0}
+  s_Bad: {fileID: 0}
 --- !u!114 &1509068693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2873,6 +2885,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09c5c60285d5c2438dd16d95c32ebd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s_Good: {fileID: 0}
+  s_Bad: {fileID: 0}
 --- !u!114 &1550169764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3015,6 +3029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09c5c60285d5c2438dd16d95c32ebd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s_Good: {fileID: 8300000, guid: 025d926949664874da39111bde77b2c2, type: 3}
+  s_Bad: {fileID: 8300000, guid: e6aae06ded06fed4c933bf254b7a0847, type: 3}
 --- !u!114 &1569189308
 MonoBehaviour:
   m_ObjectHideFlags: 0

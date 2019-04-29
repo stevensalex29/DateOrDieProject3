@@ -717,13 +717,13 @@ public class GameManager : MonoBehaviour
         n45.setPrevious(n42);
 
         Node n41 = new Node();
-        n41.setText("No...maybe...yes...Cthulhu looks down shyly, then looks back up at her. They locked (dozens of) eyes for a moment. Cthulhu...");
+        n41.setText("They locked (dozens of) eyes for a moment. Cthulhu...");
         n41.setOption1(n42);
         n41.setOption2(n43);
         n41.setOption3(n44);
 
         Node n40 = new Node();
-        n40.setText("Shub snorted as she laughed. 'That’s sad. I bet you practiced kissing a pillow too, huh?', she said smirking at him.");
+        n40.setText("Shub snorted as she laughed. 'That’s sad.");
         n40.setNext(n41);
         n41.setPrevious(n40);
 

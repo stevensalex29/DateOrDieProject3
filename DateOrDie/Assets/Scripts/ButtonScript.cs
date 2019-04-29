@@ -19,17 +19,17 @@ public class ButtonScript : MonoBehaviour
         if (current.getOption1().getRating() == "good")
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.2f);
-            GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
+            GameObject.Find("GameSound").GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
         }
         else if (current.getOption1().getRating() == "real good")
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.33f);
-            GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
+            GameObject.Find("GameSound").GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
         }
         else
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().decrementAffectionBar();
-            GetComponent<AudioSource>().PlayOneShot(s_Bad, 1.0f);
+            GameObject.Find("GameSound").GetComponent<AudioSource>().PlayOneShot(s_Bad, 1.0f);
         }
         // Update new current node and no longer show options
         GameObject.Find("GameManager").GetComponent<GameManager>().setCurrentNode(current.getOption1().getNext());
@@ -48,17 +48,17 @@ public class ButtonScript : MonoBehaviour
         if (current.getOption2().getRating() == "good")
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.2f);
-            GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
+            GameObject.Find("GameSound").GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
         }
         else if (current.getOption2().getRating() == "real good")
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.33f);
-            GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
+            GameObject.Find("GameSound").GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
         }
         else
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().decrementAffectionBar();
-            GetComponent<AudioSource>().PlayOneShot(s_Bad, 1.0f);
+            GameObject.Find("GameSound").GetComponent<AudioSource>().PlayOneShot(s_Bad, 1.0f);
         }
         // Update new current node and no longer show options
         GameObject.Find("GameManager").GetComponent<GameManager>().setCurrentNode(current.getOption2().getNext());
@@ -77,17 +77,17 @@ public class ButtonScript : MonoBehaviour
         if (current.getOption3().getRating() == "good")
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.2f);
-            GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
+            GameObject.Find("GameSound").GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
         }
         else if (current.getOption3().getRating() == "real good")
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().incrementAffectionBar(.33f);
-            GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
+            GameObject.Find("GameSound").GetComponent<AudioSource>().PlayOneShot(s_Good, 1.0f);
         }
         else
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().decrementAffectionBar();
-            GetComponent<AudioSource>().PlayOneShot(s_Bad, 1.0f);
+            GameObject.Find("GameSound").GetComponent<AudioSource>().PlayOneShot(s_Bad, 1.0f);
         }
         // Update new current node and no longer show options
         GameObject.Find("GameManager").GetComponent<GameManager>().setCurrentNode(current.getOption3().getNext());
